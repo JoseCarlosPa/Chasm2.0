@@ -1,9 +1,12 @@
 @extends('frontEnd.layouts.master')
-@section('title','Detial Page')
+@section('title','Detalles')
 @section('slider')
 @endsection
 @section('content')
-    <br><br><br><br><br><br><br><br><br><br>
+    <div class="header_container">
+        <br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <br><br>
     <div class="container">
         <div class="row">
             <div class="col-sm-3">

@@ -1,5 +1,7 @@
 @extends('frontEnd.layouts.master')
 @section('title','CHASM')
+@section('slider')
+@endsection
 @section('content')
     <div id="inicio"></div>
     <div class="banner_container">
@@ -88,7 +90,7 @@
         <!--Inicio de Tienda-->
         <div class="row">
             <div class="col-sm-4">
-                <a href="_producto_interes.php" class="links_cards">
+                <a href="{{'/tienda'}}" class="links_cards">
                     <div class="card card_shadow" style="width: 18rem; height: 35rem;">
                         <div class="trapezoid3 "><p style="margin-top: 10%">Comprar</p></div>
                         <img class="card-img-top" src="{{asset('frontEnd/imgs/miniaturas/1.png')}}" alt="Card image cap">
@@ -117,7 +119,7 @@
                 </a>
             </div>
             <div class="col-sm-4">
-                <a href="_producto_interes.php" class="links_cards">
+                <a href="{{'/tienda'}}" class="links_cards">
                     <div class="card card_shadow" style="width: 18rem;height: 35rem;">
                         <div class="trapezoid3 "><p style="margin-top: 10%">Comprar</p></div>
                         <img class="card-img-top" src="{{asset('frontEnd/imgs/miniaturas/3.png')}}" alt="Card image cap">
@@ -137,7 +139,7 @@
         <br><br><br>
         <div class="row">
             <div class="col-sm-4">
-                <a href="_producto_interes.php" class="links_cards">
+                <a href="{{'/tienda'}}" class="links_cards">
                     <div class="card card_shadow" style="width: 18rem;height: 35rem;">
                         <div class="trapezoid3 "><p style="margin-top: 10%">Comprar</p></div>
                         <img class="card-img-top" src="{{asset('frontEnd/imgs/miniaturas/4.png')}}" alt="Card image cap">
@@ -167,7 +169,7 @@
                 </a>
             </div>
             <div class="col-sm-4">
-                <a href="_producto_interes.php" class="links_cards">
+                <a href="{{'/tienda'}}" class="links_cards">
                     <div class="card card_shadow" style="width: 18rem;height: 35rem;">
                         <div class="trapezoid3 "><p style="margin-top: 10%">Comprar</p></div>
                         <img class="card-img-top" src="{{asset('frontEnd/imgs/miniaturas/6.png')}}" alt="Card image cap">
@@ -190,7 +192,7 @@
         <!--Boton de "IR a la tienda"-->
         <div class="row ">
             <div class="col-sm-12 text-center align-middle ">
-                <a href="tienda.php" class="links_tienda">
+                <a href="{{'/tienda'}}" class="links_tienda">
                     <div id="trapezoid2">
                         <div class="row">
                             <div class="col-sm-12">

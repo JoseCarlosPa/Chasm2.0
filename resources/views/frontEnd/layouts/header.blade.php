@@ -21,7 +21,7 @@
                     <div class="col-sm-3 ">
                         <div class="row ">
                             <div class="col-sm-4 puerta_margen">
-                                <p><img src="{{asset('frontEnd/images/home/dungeon.png')}}" alt="" width="90%"
+                                <p><img src="{{asset('frontEnd/images/home/dungeon.png')}}" alt="" width="110%"
                                         height="100%"/></p>
                             </div>
                             <ul class="nav navbar-nav">
@@ -65,11 +65,11 @@
                     </div>
                     <div class="col-sm-3 text-center imgs_redes">
                         <a href="https://www.facebook.com/chasmmochilas" target="_blank"><img
-                                src="{{asset('frontEnd/images/home/facebook1.svg')}}" alt="" width="15%" height="100%"/></a>
+                                src="{{asset('frontEnd/images/home/facebook1.svg')}}" alt="" width="22%" height="100%"/></a>
                         <a href="https://www.instagram.com/mochilaschasm/" target="_blank"><img
-                                src="{{asset('frontEnd/images/home/insta.svg')}}" alt="" width="15%" height="100%"/></a>
+                                src="{{asset('frontEnd/images/home/insta.svg')}}" alt="" width="22%" height="100%"/></a>
                         <a href="https://twitter.com/MochilasChasm" target="_blank"><img
-                                src="{{asset('frontEnd/images/home/tweeter.svg')}}" alt="" width="15%"
+                                src="{{asset('frontEnd/images/home/tweeter.svg')}}" alt="" width="22%"
                                 height="100%"/></a>
                     </div>
                 </div>

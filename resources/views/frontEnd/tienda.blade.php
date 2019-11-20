@@ -1,8 +1,12 @@
 @extends('frontEnd.layouts.master')
-@section('title','Home Page')
+@section('title','Tienda')
+@section('slider')
+@endsection
 @section('content')
-
-    <br><br><br><br><br><br><br>
+    <div class="header_container">
+        <br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <br><br>
     <section>
         <div class="container">
             <div class="row">
@@ -23,7 +27,9 @@
                                             <a href="{{url('/product-detail',$product->id)}}" style ="color: white"><div class="trapezoid3 "><p style="padding-top: 10%">Comprar</p></div></a><br><br>
                                             <div class="productinfo text-center">
                                                 <a href="{{url('/product-detail',$product->id)}}"><img src="{{url('products/small/',$product->image)}}" alt="" width="30em" height="200em"/></a>
-                                                <h2>$ {{$product->price}}</h2>
+                                                <br><br>
+                                                <h2><img src="{{asset('frontEnd/imgs/miniaturas/carrito.svg')}}" alt="" width="3em"
+                                                         height="40px"/> <br><br>$</a> {{$product->price}}</h2>
                                                 <p>{{$product->p_name}}</p>
 
                                             </div>

@@ -1,6 +1,11 @@
 @extends('frontEnd.layouts.master')
 @section('title','CHASM')
+@section('slider')
+@endsection
 @section('content')
+    <div class="header_container">
+        <br><br><br><br><br><br><br><br><br><br>
+    </div>
     <div id="inicio"></div>
     <div class="banner_container">
         <!--Contenedor para banners-->
