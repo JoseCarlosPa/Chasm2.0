@@ -26,7 +26,7 @@
                             </div>
                             <ul class="nav navbar-nav">
                                 <br>
-                                <li><a href="{{url('/viewcart')}}"><i class="fa fa-shopping-cart"></i> Cart</a></li>
+
                                 @if(Auth::check())
                                     <li><a href="{{url('/myaccount')}}"><i class="fa fa-user"></i> Mi cuenta</a></li>
                                     <li><a href="{{ url('/logout') }}"><i class="fa fa-lock"></i> Cerrar Sesion </a>
@@ -50,7 +50,7 @@
                                 <a href="{{'/'}}#nosotros" class="font_header"><p>Nosotros</p></a>
                             </div>
                             <div class="col-sm-2">
-                                <a href="{{'tienda'}}" class="font_header"><p>Tienda</p></a>
+                                <a href="{{'/tienda'}}" class="font_header"><p>Tienda</p></a>
                             </div>
                             <div class="col-sm-2">
                                 <a href="https://mochilaschasm.com/blog" class="font_header"><p>Blog</p></a>

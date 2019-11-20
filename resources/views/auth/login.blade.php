@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Login</title><meta charset="UTF-8" />
+    <title>Iniciar Sesion</title><meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}" />
     <link rel="stylesheet" href="{{asset('css/bootstrap-responsive.min.css')}}" />
@@ -14,7 +14,7 @@
 <div id="loginbox">
     <form id="loginform" class="form-vertical" method="POST" action="{{ route('login') }}">
         <input type="hidden" name="_token" value="{{csrf_token()}}">
-        <div class="control-group normal_text"> <h3><img src="{{asset('img/logo.png')}}" alt="Logo" /></h3></div>
+        <div class="control-group normal_text"> <h3><img src="{{asset('img/logo2.png')}}" alt="Logo" width="30%" height="100%"/></h3></div>
         <div class="control-group">
             <div class="controls">
                 <div class="main_input_box">
@@ -42,22 +42,22 @@
             </div>
         </div>
         <div class="form-actions">
-            <span class="pull-left"><a href="#" class="flip-link btn btn-info" id="to-recover">Lost password?</a></span>
-            <span class="pull-right"><button type="submit" class="btn btn-success">Login</button></span>
+            <span class="pull-left"><a href="#" class="flip-link btn btn-info" id="to-recover">Olvidaste la contraseña?</a></span>
+            <span class="pull-right"><button type="submit" class="btn btn-success">Iniciar sesion</button></span>
         </div>
     </form>
     <form id="recoverform" action="#" class="form-vertical">
-        <p class="normal_text">Enter your e-mail address below and we will send you instructions how to recover a password.</p>
+        <p class="normal_text">Ingresa tu email con el que te registraste y se te enviaran las instrucciones</p>
 
         <div class="controls">
             <div class="main_input_box">
-                <span class="add-on bg_lo"><i class="icon-envelope"></i></span><input type="text" placeholder="E-mail address" />
+                <span class="add-on bg_lo"><i class="icon-envelope"></i></span><input type="text" placeholder="E-mail " />
             </div>
         </div>
 
         <div class="form-actions">
-            <span class="pull-left"><a href="#" class="flip-link btn btn-success" id="to-login">&laquo; Back to login</a></span>
-            <span class="pull-right"><a class="btn btn-info">Recover</a></span>
+            <span class="pull-left"><a href="#" class="flip-link btn btn-success" id="to-login">&laquo; Regresar al login</a></span>
+            <span class="pull-right"><a class="btn btn-info">Recuperar</a></span>
         </div>
     </form>
 </div>

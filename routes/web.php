@@ -12,6 +12,7 @@
 */
 /* FrontEnd Location */
 Route::get('/','IndexController@index');
+Route::get('/tienda','IndexController@tienda')->name('tienda');
 Route::get('/list-products','IndexController@shop');
 Route::get('/cat/{id}','IndexController@listByCat')->name('cats');
 Route::get('/product-detail/{id}','IndexController@detialpro');
@@ -49,8 +50,8 @@ Route::group(['middleware'=>'FrontLogin_middleware'],function (){
 
 
 /* Admin Location */
-Auth::routes(['register'=>false]);
 Route::get('/home', 'HomeController@index')->name('home');
+Auth::routes(['register'=>false]);
 Route::group(['prefix'=>'admin','middleware'=>['auth','admin']],function (){
     Route::get('/', 'AdminController@index')->name('admin_home');
     /// Setting Area

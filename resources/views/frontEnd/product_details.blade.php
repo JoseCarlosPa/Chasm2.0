@@ -3,6 +3,7 @@
 @section('slider')
 @endsection
 @section('content')
+    <br><br><br><br><br><br><br><br><br><br>
     <div class="container">
         <div class="row">
             <div class="col-sm-3">
@@ -19,7 +20,7 @@
             <div class="col-sm-5">
                 <div class="easyzoom easyzoom--overlay easyzoom--with-thumbnails">
                     <a href="{{url('products/large',$detail_product->image)}}">
-                        <img src="{{url('products/small',$detail_product->image)}}" alt="" id="dynamicImage"/>
+                        <img src="{{url('products/small',$detail_product->image)}}" alt="" id="dynamicImage" width="200em" height="150em"/>
                     </a>
                 </div>
 
@@ -27,7 +28,7 @@
                     <li>
                         @foreach($imagesGalleries as $imagesGallery)
                             <a href="{{url('products/large',$imagesGallery->image)}}" data-standard="{{url('products/small',$imagesGallery->image)}}">
-                                <img src="{{url('products/small',$imagesGallery->image)}}" alt="" width="75" style="padding: 8px;">
+                                <img src="{{url('products/small',$imagesGallery->image)}}" alt="" width="50em" style="padding: 8px;">
                             </a>
                         @endforeach
                     </li>
@@ -47,32 +48,32 @@
                         <p>Code ID: {{$detail_product->p_code}}</p>
                         <span>
                             <select name="size" id="idSize" class="form-control">
-                        	<option value="">Select Size</option>
+                        	<option value="">Seleccion el tamaño</option>
                             @foreach($detail_product->attributes as $attrs)
                                 <option value="{{$detail_product->id}}-{{$attrs->size}}">{{$attrs->size}}</option>
                             @endforeach
                         </select>
                         </span><br>
                         <span>
-                            <span id="dynamic_price">US ${{$detail_product->price}}</span>
-                            <label>Quantity:</label>
+                            <span id="dynamic_price">MX ${{$detail_product->price}}</span>
+                            <label>Cantidad:</label>
                             <input type="text" name="quantity" value="{{$totalStock}}" id="inputStock"/>
                             @if($totalStock>0)
                             <button type="submit" class="btn btn-fefault cart" id="buttonAddToCart">
                                 <i class="fa fa-shopping-cart"></i>
-                                Add to cart
+                                Agregar al carrito
                             </button>
                             @endif
                         </span>
-                        <p><b>Availability:</b>
+                        <p><b>Disponibles:</b>
                             @if($totalStock>0)
-                                <span id="availableStock">In Stock</span>
+                                <span id="availableStock">En almacen</span>
                             @else
-                                <span id="availableStock">Out of Stock</span>
+                                <span id="availableStock">Agotado</span>
                             @endif
                         </p>
-                        <p><b>Condition:</b> New</p>
-                        <a href=""><img src="{{asset('frontEnd/images/product-details/share.png')}}" class="share img-responsive"  alt="" /></a>
+                        <p><b>Condicion:</b> Nuevo</p>
+
                     </div><!--/product-information-->
                 </form>
 
@@ -82,9 +83,7 @@
         <div class="category-tab shop-details-tab"><!--category-tab-->
             <div class="col-sm-12">
                 <ul class="nav nav-tabs">
-                    <li class="active"><a href="#details" data-toggle="tab">Details</a></li>
-                    <li><a href="#companyprofile" data-toggle="tab">Company Profile</a></li>
-                    <li><a href="#reviews" data-toggle="tab">Reviews (5)</a></li>
+                    <li class="active"><a href="#details" data-toggle="tab">Detalles</a></li>
                 </ul>
             </div>
             <div class="tab-content">
@@ -92,86 +91,14 @@
                     {{$detail_product->description}}
                 </div>
 
-                <div class="tab-pane fade" id="companyprofile" >
-                    <div class="col-sm-3">
-                        <div class="product-image-wrapper">
-                            <div class="single-products">
-                                <div class="productinfo text-center">
-                                    <img src="{{asset('frontEnd/images/home/gallery1.jpg')}}" alt="" />
-                                    <h2>$56</h2>
-                                    <p>Easy Polo Black Edition</p>
-                                    <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="product-image-wrapper">
-                            <div class="single-products">
-                                <div class="productinfo text-center">
-                                    <img src="{{asset('frontEnd/images/home/gallery3.jpg')}}" alt="" />
-                                    <h2>$56</h2>
-                                    <p>Easy Polo Black Edition</p>
-                                    <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="product-image-wrapper">
-                            <div class="single-products">
-                                <div class="productinfo text-center">
-                                    <img src="{{asset('frontEnd/images/home/gallery2.jpg')}}" alt="" />
-                                    <h2>$56</h2>
-                                    <p>Easy Polo Black Edition</p>
-                                    <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="product-image-wrapper">
-                            <div class="single-products">
-                                <div class="productinfo text-center">
-                                    <img src="{{asset('frontEnd/images/home/gallery4.jpg')}}" alt="" />
-                                    <h2>$56</h2>
-                                    <p>Easy Polo Black Edition</p>
-                                    <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="tab-pane fade" id="reviews" >
-                    <div class="col-sm-12">
-                        <ul>
-                            <li><a href=""><i class="fa fa-user"></i>EUGEN</a></li>
-                            <li><a href=""><i class="fa fa-clock-o"></i>12:41 PM</a></li>
-                            <li><a href=""><i class="fa fa-calendar-o"></i>31 DEC 2014</a></li>
-                        </ul>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                        <p><b>Write Your Review</b></p>
 
-                        <form action="#">
-										<span>
-											<input type="text" placeholder="Your Name"/>
-											<input type="email" placeholder="Email Address"/>
-										</span>
-                            <textarea name="" ></textarea>
-                            <b>Rating: </b> <img src="{{asset('frontEnd/images/product-details/rating.png')}}" alt="" />
-                            <button type="button" class="btn btn-default pull-right">
-                                Submit
-                            </button>
-                        </form>
-                    </div>
-                </div>
 
             </div>
         </div><!--/category-tab-->
 
         <div class="recommended_items"><!--recommended_items-->
-            <h2 class="title text-center">recommended items</h2>
+            <h2 class="title text-center">Items recomendados</h2>
 
             <div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
