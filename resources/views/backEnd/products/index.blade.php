@@ -5,12 +5,12 @@
     <div class="container-fluid">
         @if(Session::has('message'))
             <div class="alert alert-success text-center" role="alert">
-                <strong>Well done!</strong> {{Session::get('message')}}
+                <strong>Exito!</strong> {{Session::get('message')}}
             </div>
         @endif
         <div class="widget-box">
             <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
-                <h5>List Products</h5>
+                <h5>Lista Products</h5>
             </div>
             <div class="widget-content nopadding">
                 <table class="table table-bordered data-table">
@@ -82,14 +82,14 @@
             var id=$(this).attr('rel');
             var deleteFunction=$(this).attr('rel1');
             swal({
-                title:'Are you sure?',
-                text:"You won't be able to revert this!",
+                title:'Estas seguro?',
+                text:"No podras revertir este cambio!",
                 type:'warning',
                 showCancelButton:true,
                 confirmButtonColor:'#3085d6',
                 cancelButtonColor:'#d33',
-                confirmButtonText:'Yes, delete it!',
-                cancelButtonText:'No, cancel!',
+                confirmButtonText:'Si,Borrar!',
+                cancelButtonText:'No, cancelar!',
                 confirmButtonClass:'btn btn-success',
                 cancelButtonClass:'btn btn-danger',
                 buttonsStyling:false,

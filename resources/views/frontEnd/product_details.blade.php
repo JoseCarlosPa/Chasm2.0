@@ -56,14 +56,6 @@
                         </span><br>
                         <span>
                             <span id="dynamic_price">MX ${{$detail_product->price}}</span>
-                            <label>Cantidad:</label>
-                            <input type="text" name="quantity" value="{{$totalStock}}" id="inputStock"/>
-                            @if($totalStock>0)
-                            <button type="submit" class="btn btn-fefault cart" id="buttonAddToCart">
-                                <i class="fa fa-shopping-cart"></i>
-                                Agregar al carrito
-                            </button>
-                            @endif
                         </span>
                         <p><b>Disponibles:</b>
                             @if($totalStock>0)
