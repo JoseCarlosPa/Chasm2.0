@@ -1,7 +1,7 @@
 @extends('backEnd.layouts.master')
 @section('title','Add Images Gallery')
 @section('content')
-    <div id="breadcrumb"> <a href="{{url('/admin')}}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a> <a href="{{route('product.index')}}">Products</a> <a href="#" class="current">Add Images Gallery</a> </div>
+    <div id="breadcrumb"> <a href="{{url('/admin')}}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Inicio</a> <a href="{{route('product.index')}}">Productos</a> <a href="#" class="current">Añadir imágenes a galería</a> </div>
     <div class="container-fluid">
         @if(Session::has('message'))
             <div class="alert alert-success text-center" role="alert">
@@ -19,13 +19,13 @@
                             <li>
                                 <div class="user-thumb"> <img width="40" height="40" alt="User" src="{{url('products/small',$product->image)}}"> </div>
                                 <div class="article-post">
-                                    <span class="user-info">Codigo de producto : <b>{{$product->p_code}}</b></span>
+                                    <span class="user-info">Código de producto : <b>{{$product->p_code}}</b></span>
                                     <p>Color producto : <b>{{$product->p_color}}</b></p>
                                 </div>
                             </li>
                             <li>
                                 <form action="{{route('image-gallery.store')}}" method="post" role="form" enctype="multipart/form-data">
-                                    <legend>Can Add Multi Images</legend>
+                                    <legend>Adición de multi-imagen</legend>
                                     <input type="hidden" name="_token" value="{{csrf_token()}}">
                                     <div class="form-group">
                                         <input type="hidden" name="products_id" value="{{$product->id}}">
@@ -50,8 +50,8 @@
                             <thead>
                             <tr>
                                 <th>ID</th>
-                                <th>Image</th>
-                                <th>Action</th>
+                                <th>Imagen</th>
+                                <th>Acción</th>
                             </tr>
                             </thead>
                             <tbody>

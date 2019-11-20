@@ -5,22 +5,22 @@
     <div class="container-fluid">
         @if(Session::has('message'))
             <div class="alert alert-success text-center" role="alert">
-                <strong>Exito!</strong> {{Session::get('message')}}
+                <strong>Conseguido!</strong> {{Session::get('message')}}
             </div>
         @endif
         <div class="widget-box">
             <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
-                <h5>Lista de Categories</h5>
+                <h5>Lista de Categoría</h5>
             </div>
             <div class="widget-content nopadding">
                 <table class="table table-bordered data-table">
                     <thead>
                     <tr>
-                        <th>Nombre categoria</th>
-                        <th>Categoria padre</th>
-                        <th>Creada hace</th>
+                        <th>Nombre de categoría</th>
+                        <th>Categoría principal</th>
+                        <th>Fecha de creación</th>
                         <th>Estatus</th>
-                        <th>Accion</th>
+                        <th>Acción</th>
                     </tr>
                     </thead>
                     <tbody>
