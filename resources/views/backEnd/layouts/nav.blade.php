@@ -2,7 +2,7 @@
 <div id="sidebar"><a href="{{url('/admin')}}" class="visible-phone"><i class="icon icon-home"></i> Dashboard</a>
     <ul>
         <li{{$menu_active==1? ' class=active':''}}><a href="{{url('/admin')}}"><i class="icon icon-home"></i> <span>Dashboard</span></a> </li>
-        <li class="submenu {{$menu_active==2? ' active':''}}"> <a href="#"><i class="icon icon-th-list"></i> <span>Categorias</span></a>
+        <li class="submenu {{$menu_active==2? ' active':''}}"> <a href="#"><i class="icon icon-th-list"></i> <span>Categorías</span></a>
             <ul>
                 <li><a href="{{url('/admin/category/create')}}">Agregar Nueva Categoria</a></li>
                 <li><a href="{{route('category.index')}}">Lista de Categorias </a></li>

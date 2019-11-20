@@ -1,7 +1,7 @@
 @extends('backEnd.layouts.master')
 @section('title','List Products')
 @section('content')
-    <div id="breadcrumb"> <a href="{{url('/admin')}}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a> <a href="{{route('product.index')}}" class="current">Products</a></div>
+    <div id="breadcrumb"> <a href="{{url('/admin')}}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Inicio</a> <a href="{{route('product.index')}}" class="current">Productos</a></div>
     <div class="container-fluid">
         @if(Session::has('message'))
             <div class="alert alert-success text-center" role="alert">
@@ -10,22 +10,22 @@
         @endif
         <div class="widget-box">
             <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
-                <h5>List Products</h5>
+                <h5>Lista de Productos</h5>
             </div>
             <div class="widget-content nopadding">
                 <table class="table table-bordered data-table">
                     <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Image</th>
-                        <th>Product Name</th>
-                        <th>Under Category</th>
-                        <th>Code Of Product</th>
-                        <th>Product Color</th>
-                        <th>Price</th>
-                        <th>Image Gallery</th>
-                        <th>Add Attribute</th>
-                        <th>Action</th>
+                        <th>Imagen</th>
+                        <th>Nombre de Producto</th>
+                        <th>Subcategoría</th>
+                        <th>Código de producto</th>
+                        <th>Color de producto</th>
+                        <th>Precio</th>
+                        <th>Galería de imagen</th>
+                        <th>Añadir atributo</th>
+                        <th>Acción</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -39,12 +39,12 @@
                             <td style="vertical-align: middle;">{{$product->p_code}}</td>
                             <td style="vertical-align: middle;">{{$product->p_color}}</td>
                             <td style="vertical-align: middle;">{{$product->price}}</td>
-                            <td style="vertical-align: middle;text-align: center;"><a href="{{route('image-gallery.show',$product->id)}}" class="btn btn-default btn-mini">Add Images</a></td>
+                            <td style="vertical-align: middle;text-align: center;"><a href="{{route('image-gallery.show',$product->id)}}" class="btn btn-default btn-mini">Añadir imágenes</a></td>
                             <td style="vertical-align: middle;text-align: center;"><a href="{{route('product_attr.show',$product->id)}}" class="btn btn-success btn-mini">Add Attr</a></td>
                             <td style="text-align: center; vertical-align: middle;">
-                                <a href="#myModal{{$product->id}}" data-toggle="modal" class="btn btn-info btn-mini">View</a>
-                                <a href="{{route('product.edit',$product->id)}}" class="btn btn-primary btn-mini">Edit</a>
-                                <a href="javascript:" rel="{{$product->id}}" rel1="delete-product" class="btn btn-danger btn-mini deleteRecord">Delete</a>
+                                <a href="#myModal{{$product->id}}" data-toggle="modal" class="btn btn-info btn-mini">Visualizar</a>
+                                <a href="{{route('product.edit',$product->id)}}" class="btn btn-primary btn-mini">Editar</a>
+                                <a href="javascript:" rel="{{$product->id}}" rel1="delete-product" class="btn btn-danger btn-mini deleteRecord">Eliminar</a>
                             </td>
                         </tr>
                         {{--Pop Up Model for View Product--}}

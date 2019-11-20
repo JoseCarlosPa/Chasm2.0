@@ -1,26 +1,26 @@
 @extends('backEnd.layouts.master')
 @section('title','Add Category')
 @section('content')
-    <div id="breadcrumb"> <a href="{{url('/admin')}}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a> <a href="{{route('category.index')}}">Categories</a> <a href="{{route('category.create')}}" class="current">Add New Category</a> </div>
+    <div id="breadcrumb"> <a href="{{url('/admin')}}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Inicio</a> <a href="{{route('category.index')}}">Categorías</a> <a href="{{route('category.create')}}" class="current">Añadir nueva categoría</a> </div>
     <div class="container-fluid">
         <div class="row-fluid">
             <div class="span12">
             <div class="widget-box">
                 <div class="widget-title"> <span class="icon"> <i class="icon-info-sign"></i> </span>
-                    <h5>Agregar nueva categoria</h5>
+                    <h5>Agregar Nueva Categoría</h5>
                 </div>
                 <div class="widget-content nopadding">
                     <form class="form-horizontal" method="post" action="{{route('category.store')}}" name="basic_validate" id="basic_validate" novalidate="novalidate">
                         <input type="hidden" name="_token" value="{{csrf_token()}}">
                         <div class="control-group{{$errors->has('name')?' has-error':''}}">
-                            <label class="control-label">Nombre de la categoria:</label>
+                            <label class="control-label">Nombre de la categoría:</label>
                             <div class="controls">
                                 <input type="text" name="name" id="name" value="{{old('name')}}" required>
                                 <span class="text-danger" id="chCategory_name" style="color: red;">{{$errors->first('name')}}</span>
                             </div>
                         </div>
                         <div class="control-group">
-                            <label class="control-label">Nivel de la categoria :</label>
+                            <label class="control-label">Nivel de la categoría :</label>
                             <div class="controls" style="width: 245px;">
                                 <select name="parent_id" id="parent_id">
                                         @foreach($cate_levels as $key=>$value)
@@ -40,7 +40,7 @@
                             </div>
                         </div>
                         <div class="control-group">
-                            <label class="control-label">Descripcion :</label>
+                            <label class="control-label">Descripción :</label>
                             <div class="controls">
                                 <textarea name="description" id="description" rows="3">{{old('description')}}</textarea>
                             </div>

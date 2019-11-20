@@ -7,21 +7,21 @@
             <div class="span12">
                 <div class="widget-box">
                     <div class="widget-title"> <span class="icon"> <i class="icon-info-sign"></i> </span>
-                        <h5>Editar Categoria</h5>
+                        <h5>Editar Categoría</h5>
                     </div>
                     <div class="widget-content nopadding">
                         <form class="form-horizontal" method="post" action="{{route('category.update',$edit_category->id)}}" name="basic_validate" id="basic_validate" novalidate="novalidate">
                             <input type="hidden" name="_token" value="{{csrf_token()}}">
                             {{method_field("PUT")}}
                             <div class="control-group{{$errors->has('name')?' has-error':''}}">
-                                <label class="control-label">Category Name :</label>
+                                <label class="control-label">Nombre de categoría :</label>
                                 <div class="controls">
                                     <input type="text" name="name" id="name" value="{{$edit_category->name}}" required>
                                     <span class="text-danger" style="color: red;">{{$errors->first('name')}}</span>
                                 </div>
                             </div>
                             <div class="control-group">
-                                <label class="control-label">Nivel de Categoria :</label>
+                                <label class="control-label">Nivel de Categoría :</label>
                                 <div class="controls" style="width: 245px;">
                                     <select name="parent_id" id="parent_id">
                                         {{--@foreach($cate_levels as $key=>$value)
@@ -45,7 +45,7 @@
                                 </div>
                             </div>
                             <div class="control-group">
-                                <label class="control-label">Descripcion :</label>
+                                <label class="control-label">Descripción :</label>
                                 <div class="controls">
                                     <textarea name="description" id="description" rows="3">{{$edit_category->description}}</textarea>
                                 </div>

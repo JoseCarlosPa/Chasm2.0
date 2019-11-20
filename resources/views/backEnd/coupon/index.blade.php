@@ -1,28 +1,28 @@
 @extends('backEnd.layouts.master')
 @section('title','List Coupons')
 @section('content')
-    <div id="breadcrumb"> <a href="{{url('/admin')}}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a> <a href="{{route('coupon.index')}}" class="current">Coupons</a></div>
+    <div id="breadcrumb"> <a href="{{url('/admin')}}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Inicio</a> <a href="{{route('coupon.index')}}" class="current">Coupones</a></div>
     <div class="container-fluid">
         @if(Session::has('message'))
             <div class="alert alert-success text-center" role="alert">
-                <strong>Well done!</strong> {{Session::get('message')}}
+                <strong>Conseguido!</strong> {{Session::get('message')}}
             </div>
         @endif
         <div class="widget-box">
             <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
-                <h5>List Products</h5>
+                <h5>Lista de Productos</h5>
             </div>
             <div class="widget-content nopadding">
                 <table class="table table-bordered data-table">
                     <thead>
                     <tr>
                         <th>ID</th>
-                        <th>Coupon Code</th>
-                        <th>Amount</th>
-                        <th>Amount Type</th>
-                        <th>Expiry Date</th>
-                        <th>Status</th>
-                        <th>Action</th>
+                        <th>Código de cupón</th>
+                        <th>Cantidad</th>
+                        <th>Tipo de unidad</th>
+                        <th>Fecha de expiración</th>
+                        <th>Estatus</th>
+                        <th>Acción</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -39,8 +39,8 @@
                                 {{$coupon->status==1?'Active':'Disable'}}
                             </td>
                             <td style="text-align: center; vertical-align: middle;">
-                                <a href="{{route('coupon.edit',$coupon->id)}}" class="btn btn-primary btn-mini">Edit</a>
-                                <a href="javascript:" rel="{{$coupon->id}}" rel1="delete-coupon" class="btn btn-danger btn-mini deleteRecord">Delete</a>
+                                <a href="{{route('coupon.edit',$coupon->id)}}" class="btn btn-primary btn-mini">Editar</a>
+                                <a href="javascript:" rel="{{$coupon->id}}" rel1="delete-coupon" class="btn btn-danger btn-mini deleteRecord">Eliminar</a>
                             </td>
                         </tr>
                     @endforeach
