@@ -18,13 +18,14 @@
 
                             @if($product->category->status==1)
                                 <div class="col-sm-4">
-                                    <div class="product-image-wrapper">
+                                    <div class="product-image-wrapper card card_shadow">
                                         <div class="single-products">
+                                            <a href="{{url('/product-detail',$product->id)}}" style ="color: white"><div class="trapezoid3 "><p style="padding-top: 10%">Comprar</p></div></a><br><br>
                                             <div class="productinfo text-center">
                                                 <a href="{{url('/product-detail',$product->id)}}"><img src="{{url('products/small/',$product->image)}}" alt="" width="30em" height="200em"/></a>
                                                 <h2>$ {{$product->price}}</h2>
                                                 <p>{{$product->p_name}}</p>
-                                                <a href="{{url('/product-detail',$product->id)}}" class="btn btn-default add-to-cart">Ver Producto</a>
+
                                             </div>
                                         </div>
                                     </div>
