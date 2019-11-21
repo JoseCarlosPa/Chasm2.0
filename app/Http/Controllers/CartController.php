@@ -30,7 +30,7 @@ class CartController extends Controller
             $stockAvailable=DB::table('product_att')->select('stock','sku')->where(['products_id'=>$inputToCart['products_id'],
                 'price'=>$inputToCart['price']])->first();
             if($stockAvailable->stock>=$inputToCart['quantity']){
-                $inputToCart['user_email']='weshare@gmail.com';
+                $inputToCart['user_email']='rodrigo_vilanova@hotmail.com';
                 $session_id=Session::get('session_id');
                 if(empty($session_id)){
                     $session_id=str_random(40);
@@ -44,13 +44,13 @@ class CartController extends Controller
                     'product_color'=>$inputToCart['product_color'],
                     'size'=>$inputToCart['size']])->count();
                 if($count_duplicateItems>0){
-                    return back()->with('message','This Item Added already');
+                    return back()->with('message','Los Itesm fueron agregado correctamente');
                 }else{
                     Cart_model::create($inputToCart);
-                    return back()->with('message','Add To Cart Already');
+                    return back()->with('message','Agregado al carrito');
                 }
             }else{
-                return back()->with('message','Stock is not Available!');
+                return back()->with('message','No hay suficiente en almacen!');
             }
         }
     }
@@ -59,7 +59,7 @@ class CartController extends Controller
         Session::forget('discount_amount_price');
         Session::forget('coupon_code');
         $delete_item->delete();
-        return back()->with('message','Deleted Success!');
+        return back()->with('message','Eliminado correctamente!');
     }
     public function updateQuantity($id,$quantity){
         Session::forget('discount_amount_price');
@@ -70,9 +70,9 @@ class CartController extends Controller
         $updated_quantity=$sku_size->quantity+$quantity;
         if($stockAvailable->stock>=$updated_quantity){
             DB::table('cart')->where('id',$id)->increment('quantity',$quantity);
-            return back()->with('message','Update Quantity already');
+            return back()->with('message','Cantidad actualizada');
         }else{
-            return back()->with('message','Stock is not Available!');
+            return back()->with('message','Cantidad no encontrada!');
         }
 
 

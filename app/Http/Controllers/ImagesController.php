@@ -56,7 +56,7 @@ class ImagesController extends Controller
                 }
             }
         }
-        return back()->with('message','Add Images Successed');
+        return back()->with('message','Imagen agregada con exito');
     }
 
     /**

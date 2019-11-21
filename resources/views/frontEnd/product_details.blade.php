@@ -51,7 +51,7 @@
                         <p>Code ID: {{$detail_product->p_code}}</p>
                         <span>
                             <select name="size" id="idSize" class="form-control">
-                        	<option value="">Seleccion el tamaño</option>
+                        	<option value="">Selecciona el tamaño</option>
                             @foreach($detail_product->attributes as $attrs)
                                 <option value="{{$detail_product->id}}-{{$attrs->size}}">{{$attrs->size}}</option>
                             @endforeach
@@ -59,10 +59,18 @@
                         </span><br>
                         <span>
                             <span id="dynamic_price">MX ${{$detail_product->price}}</span>
+                            <label>Cantidad:</label>
+                            <input type="text" name="quantity" value="{{$totalStock}}" id="inputStock"/>
+                            @if($totalStock>=0)
+                                <button type="submit" class="btn btn-fefault cart" id="buttonAddToCart">
+                                <i class="fa fa-shopping-cart"></i>
+                                Agregar al carrito
+                            </button>
+                            @endif
                         </span>
                         <p><b>Disponibles:</b>
                             @if($totalStock>0)
-                                <span id="availableStock">En almacen</span>
+                                <span id="availableStock">Disponible</span>
                             @else
                                 <span id="availableStock">Agotado</span>
                             @endif
@@ -94,37 +102,6 @@
 
         <div class="recommended_items"><!--recommended_items-->
             <h2 class="title text-center">Items recomendados</h2>
-
-            <div id="recommended-item-carousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <?php $countChunk=0;?>
-                    @foreach($relateProducts->chunk(3) as $chunk)
-                        <?php $countChunk++; ?>
-                        <div class="item<?php if($countChunk==1){ echo' active';} ?>">
-                            @foreach($chunk as $item)
-                                <div class="col-sm-4">
-                                    <div class="product-image-wrapper">
-                                        <div class="single-products">
-                                            <div class="productinfo text-center">
-                                                <img src="{{url('/products/small',$item->image)}}" alt="" style="width: 150px;"/>
-                                                <h2>{{$item->price}}</h2>
-                                                <p>{{$item->p_name}}</p>
-                                                <button type="button" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add to cart</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            @endforeach
-                        </div>
-                    @endforeach
-                </div>
-                <a class="left recommended-item-control" href="#recommended-item-carousel" data-slide="prev">
-                    <i class="fa fa-angle-left"></i>
-                </a>
-                <a class="right recommended-item-control" href="#recommended-item-carousel" data-slide="next">
-                    <i class="fa fa-angle-right"></i>
-                </a>
-            </div>
         </div><!--/recommended_items-->
 
     </div>

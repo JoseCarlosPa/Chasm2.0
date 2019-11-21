@@ -26,9 +26,8 @@
                             </div>
                             <ul class="nav navbar-nav">
                                 <br>
-
+                                <li><a href="{{url('/viewcart')}}"><i class="fa fa-shopping-cart"></i> Carrito</a></li>
                                 @if(Auth::check())
-                                    <li><a href="{{url('/myaccount')}}"><i class="fa fa-user"></i> Mi cuenta</a></li>
                                     <li><a href="{{ url('/logout') }}"><i class="fa fa-lock"></i> Cerrar Sesion </a>
                                     </li>
                                 @else

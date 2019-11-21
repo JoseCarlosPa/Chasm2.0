@@ -24,7 +24,7 @@ class UsersController extends Controller
         $input_data=$request->all();
         $input_data['password']=Hash::make($input_data['password']);
         User::create($input_data);
-        return back()->with('message','Registered already!');
+        return back()->with('message','ya registrado!');
     }
     public function login(Request $request){
         $input_data=$request->all();
@@ -32,7 +32,7 @@ class UsersController extends Controller
             Session::put('frontSession',$input_data['email']);
             return redirect('/viewcart');
         }else{
-            return back()->with('message','Account is not Valid!');
+            return back()->with('message','Cuenta no valida!');
         }
     }
     public function logout(){
@@ -60,7 +60,7 @@ class UsersController extends Controller
             'country'=>$input_data['country'],
             'pincode'=>$input_data['pincode'],
             'mobile'=>$input_data['mobile']]);
-        return back()->with('message','Update Profile already!');
+        return back()->with('message','Perfil actualizado!');
 
     }
     public function updatepassword(Request $request,$id){
@@ -72,7 +72,7 @@ class UsersController extends Controller
             ]);
             $new_pass=Hash::make($input_data['newPassword']);
             User::where('id',$id)->update(['password'=>$new_pass]);
-            return back()->with('message','Update Password Already!');
+            return back()->with('message','Contraseña actualizada!');
         }else{
             return back()->with('oldpassword','Old Password is Inconrrect!');
         }

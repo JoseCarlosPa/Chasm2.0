@@ -1,11 +1,11 @@
 @extends('backEnd.layouts.master')
-@section('title','Add Attribute')
+@section('title','Agregar atributo')
 @section('content')
     <div id="breadcrumb"> <a href="{{url('/admin')}}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i>Inicio</a> <a href="{{route('product.index')}}">Productos</a> <a href="#" class="current">Añadir atributo</a> </div>
     <div class="container-fluid">
         @if(Session::has('message'))
             <div class="alert alert-success text-center" role="alert">
-                <strong>Conseguido!</strong>{{Session::get('message')}}
+                <strong>Exito!</strong>{{Session::get('message')}}
             </div>
         @endif
             <div class="row-fluid">
@@ -30,8 +30,8 @@
                                         <div class="form-group">
                                             <input type="hidden" name="products_id" value="{{$product->id}}">
                                             <input type="text" class="form-control" name="sku" value="{{old('sku')}}" id="sku" placeholder="SKU" required>
-                                            <input type="text" class="form-control" name="size" value="{{old('size')}}" id="size" placeholder="Size" required>
-                                            <input type="text" class="form-control" name="price" value="{{old('price')}}" id="price" placeholder="Price" required>
+                                            <input type="text" class="form-control" name="size" value="{{old('size')}}" id="size" placeholder="Tamaño" required>
+                                            <input type="text" class="form-control" name="price" value="{{old('price')}}" id="price" placeholder="Precio" required>
                                             <span style="color: red;">{{$errors->first('price')}}</span>
                                             <input type="number" class="form-control" name="stock" value="{{old('stock')}}" id="stock" placeholder="Stock" required>
                                         </div>

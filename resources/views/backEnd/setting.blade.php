@@ -1,9 +1,9 @@
 @extends('backEnd.layouts.master')
-@section('title','Setting')
+@section('title','Opciones')
 @section('content')
     <!--breadcrumbs-->
     <div id="content-header">
-        <div id="breadcrumb"> <a href="{{url('/admin')}}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Home</a> <a href="#" class="current">Setting</a> </div>
+        <div id="breadcrumb"> <a href="{{url('/admin')}}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Inicio</a> <a href="#" class="current">Configuracion</a> </div>
     </div>
     <!--End-breadcrumbs-->
     <div class="container-fluid">
@@ -14,33 +14,33 @@
                         @if(Session::has('message'))
                             <h5 class="text-danger" style="color: #0e90d2;">{{Session::get('message')}}</h5>
                         @else
-                            <h5>Security validation</h5>
+                            <h5>Validacion de seguridad</h5>
                         @endif
                     </div>
                     <div class="widget-content nopadding">
                         <form class="form-horizontal" method="post" action="{{url('/admin/update-pwd')}}" name="password_validate" id="password_validate" novalidate="novalidate">
                             <input type="hidden" name="_token" value="{{csrf_token()}}">
                             <div class="control-group">
-                                <label class="control-label">Current Password</label>
+                                <label class="control-label">Contraseña actual</label>
                                 <div class="controls">
                                     <input type="password" name="pwd_current" id="pwd_current" />
                                     &nbsp;<span id="chkPwd"></span>
                                 </div>
                             </div>
                             <div class="control-group">
-                                <label class="control-label">New password</label>
+                                <label class="control-label">Contraseña nueva</label>
                                 <div class="controls">
                                     <input type="password" name="pwd_new" id="pwd_new" />
                                 </div>
                             </div>
                             <div class="control-group">
-                                <label class="control-label">Confirm password</label>
+                                <label class="control-label">Confirmar contraseña</label>
                                 <div class="controls">
                                     <input type="password" name="pwdnew_confirm" id="pwdnew_confirm" />
                                 </div>
                             </div>
                             <div class="form-actions">
-                                <input type="submit" value="Update Password" class="btn btn-success">
+                                <input type="submit" value="Actualizar contraseña" class="btn btn-success">
                             </div>
                         </form>
                     </div>

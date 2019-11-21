@@ -3,7 +3,10 @@
 @section('slider')
 @endsection
 @section('content')
-    <br><br><br><br><br><br>
+    <div class="header_container">
+        <br><br><br><br><br><br><br>
+    </div>
+    <br><br><br>
     <section id="cart_items">
         <div class="container">
             @if(Session::has('message'))
