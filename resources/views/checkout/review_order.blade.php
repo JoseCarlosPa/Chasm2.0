@@ -3,9 +3,13 @@
 @section('slider')
 @endsection
 @section('content')
+    <div class="header_container">
+        <br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <br><br>
     <div class="container">
         <div class="step-one">
-            <h2 class="heading">Shipping To</h2>
+            <h2 class="heading">Se enviara a:</h2>
         </div>
         <div class="row">
             <form action="{{url('/submit-order')}}" method="post" class="form-horizontal">
@@ -37,13 +41,13 @@
                         <table class="table table-hover">
                             <thead>
                             <tr>
-                                <th>Name</th>
-                                <th>Address</th>
-                                <th>City</th>
-                                <th>State</th>
-                                <th>Country</th>
-                                <th>Pincode</th>
-                                <th>Mobile</th>
+                                <th>Nombre</th>
+                                <th>Direccion</th>
+                                <th>Ciudad</th>
+                                <th>Estado</th>
+                                <th>Pais</th>
+                                <th>Codigo Postal</th>
+                                <th>Telefono</th>
                             </tr>
                             </thead>
                             <tbody>
@@ -69,8 +73,8 @@
                                 <tr class="cart_menu">
                                     <td class="image">Item</td>
                                     <td class="description"></td>
-                                    <td class="price">Price</td>
-                                    <td class="quantity">Quantity</td>
+                                    <td class="price">Precio</td>
+                                    <td class="quantity">Cantidad</td>
                                     <td class="total">Total</td>
                                 </tr>
                                 </thead>
@@ -130,10 +134,7 @@
                             </table>
                         </div>
                         <div class="payment-options">
-                            <span>Select Payment Method : </span>
-                        <span>
-                            <label><input type="radio" name="payment_method" value="COD" checked> Cash On Delivery</label>
-                        </span>
+                            <span>Selecccionar metodo de pago : </span>
                             <span>
                             <label><input type="radio" name="payment_method" value="Paypal"> Paypal</label>
                         </span>
