@@ -25,7 +25,7 @@
                         </div>
                     </div>
                     <div class="control-group">
-                        <label for="amount" class="control-label">Cantidad</label>
+                        <label for="amount" class="control-label">Descuento</label>
                         <div class="controls{{$errors->has('amount')?' has-error':''}}">
                             <input type="number" min="0" name="amount" id="amount" class="form-control" value="{{$edit_coupons->amount}}" title="" required="required" style="width: 400px;">
                             <span class="text-danger">{{$errors->first('amount')}}</span>

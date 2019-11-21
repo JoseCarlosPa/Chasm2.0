@@ -46,7 +46,7 @@
                             </div>
                         </div>
                         <div class="control-group{{$errors->has('url')?' has-error':''}}">
-                            <label class="control-label">URL (Start with http://) :</label>
+                            <label class="control-label">URL (Empieza con http://) :</label>
                             <div class="controls">
                                 <input type="text" name="url" id="url">
                                 <span class="text-danger">{{$errors->first('url')}}</span>

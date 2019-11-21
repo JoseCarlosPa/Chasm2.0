@@ -64,10 +64,19 @@
                         </div>
                     </div>
                     <div class="control-group">
-                        <label for="price" class="control-label">Precio</label>
+                        <label for="price" class="control-label">Precio publico</label>
                         <div class="controls{{$errors->has('price')?' has-error':''}}">
                             <div class="input-prepend"> <span class="add-on">$</span>
                                 <input type="number" name="price" id="price" class="" value="{{old('price')}}" title="" required="required">
+                                <span class="text-danger">{{$errors->first('price')}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control-group">
+                        <label for="price" class="control-label">Precio usuarios</label>
+                        <div class="controls{{$errors->has('price')?' has-error':''}}">
+                            <div class="input-prepend"> <span class="add-on">$</span>
+                                <input type="number" name="price_u" id="price_u" class="" value="{{old('price_u')}}" title="" required="required">
                                 <span class="text-danger">{{$errors->first('price')}}</span>
                             </div>
                         </div>
@@ -82,7 +91,7 @@
                     <div class="control-group">
                         <label for="" class="control-label"></label>
                         <div class="controls">
-                            <button type="submit" class="btn btn-success">Add New Product</button>
+                            <button type="submit" class="btn btn-success">Agregar producto</button>
                         </div>
                     </div>
                 </form>

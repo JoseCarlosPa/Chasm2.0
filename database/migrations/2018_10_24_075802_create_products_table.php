@@ -21,6 +21,7 @@ class CreateProductsTable extends Migration
             $table->string('p_color');
             $table->text('description');
             $table->float('price');
+            $table->float('price_u');
             $table->string('image');
             $table->timestamps();
         });

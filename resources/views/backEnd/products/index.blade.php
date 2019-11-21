@@ -40,7 +40,7 @@
                             <td style="vertical-align: middle;">{{$product->p_color}}</td>
                             <td style="vertical-align: middle;">{{$product->price}}</td>
                             <td style="vertical-align: middle;text-align: center;"><a href="{{route('image-gallery.show',$product->id)}}" class="btn btn-default btn-mini">Añadir imágenes</a></td>
-                            <td style="vertical-align: middle;text-align: center;"><a href="{{route('product_attr.show',$product->id)}}" class="btn btn-success btn-mini">Add Attr</a></td>
+                            <td style="vertical-align: middle;text-align: center;"><a href="{{route('product_attr.show',$product->id)}}" class="btn btn-success btn-mini">Añadir atributo</a></td>
                             <td style="text-align: center; vertical-align: middle;">
                                 <a href="#myModal{{$product->id}}" data-toggle="modal" class="btn btn-info btn-mini">Visualizar</a>
                                 <a href="{{route('product.edit',$product->id)}}" class="btn btn-primary btn-mini">Editar</a>

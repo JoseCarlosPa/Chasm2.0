@@ -49,6 +49,7 @@ class ProductsController extends Controller
             'p_color'=>'required',
             'description'=>'required',
             'price'=>'required|numeric',
+            'price_u'=>'required|numeric',
             'image'=>'required|image|mimes:png,jpg,jpeg|max:1000',
         ]);
         $formInput=$request->all();

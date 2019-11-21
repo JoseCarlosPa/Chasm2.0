@@ -24,7 +24,7 @@
                         </div>
                     </div>
                     <div class="control-group">
-                        <label for="amount" class="control-label">Cantidad</label>
+                        <label for="amount" class="control-label">Descuento</label>
                         <div class="controls{{$errors->has('amount')?' has-error':''}}">
                             <input type="number" min="0" name="amount" id="amount" class="form-control" value="{{old('amount')}}" title="" required="required" style="width: 400px;">
                             <span class="text-danger">{{$errors->first('amount')}}</span>
@@ -45,7 +45,7 @@
                         <label for="expiry_date" class="control-label">Fecha de expiración</label>
                         <div class="controls{{$errors->has('expiry_date')?' has-error':''}}">
                             <div class="input-prepend">
-                                <div  data-date="12-02-2012" class="input-append date datepicker">
+                                <div  data-date="2020-10-10" class="input-append date datepicker">
                                     <input type="text" name="expiry_date" id="expiry_date" value="{{old('expiry_date')}}"  data-date-format="yyyy-mm-dd" class="span11" style="width: 375px;" placeholder="yyyy-mm-dd">
                                     <span class="add-on"><i class="icon-th"></i></span>
                                 </div>

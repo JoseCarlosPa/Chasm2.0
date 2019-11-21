@@ -74,13 +74,22 @@
                         </div>
                     </div>
                     <div class="control-group">
+                        <label for="price" class="control-label">Precio usuarios</label>
+                        <div class="controls{{$errors->has('price')?' has-error':''}}">
+                            <div class="input-prepend"> <span class="add-on">$</span>
+                                <input type="number" name="price_u" id="price_u" class="" value="{{$edit_product->price_u}}" title="" required="required">
+                                <span class="text-danger">{{$errors->first('price')}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="control-group">
                         <label class="control-label">Carga de imagen</label>
                         <div class="controls">
                             <input type="file" name="image" id="image"/>
                             <span class="text-danger">{{$errors->first('image')}}</span>
                             @if($edit_product->image!='')
                                 &nbsp;&nbsp;&nbsp;
-                                <a href="javascript:" rel="{{$edit_product->id}}" rel1="delete-image" class="btn btn-danger btn-mini deleteRecord">Delete Old Image</a>
+                                <a href="javascript:" rel="{{$edit_product->id}}" rel1="delete-image" class="btn btn-danger btn-mini deleteRecord">Eliminar imagen antigua</a>
                                 <img src="{{url('products/small/',$edit_product->image)}}" width="35" alt="">
                             @endif
                         </div>
@@ -88,7 +97,7 @@
                     <div class="control-group">
                         <label for="" class="control-label"></label>
                         <div class="controls">
-                            <button type="submit" class="btn btn-success">Edit Product</button>
+                            <button type="submit" class="btn btn-success">Editar Producto</button>
                         </div>
                     </div>
                 </form>
