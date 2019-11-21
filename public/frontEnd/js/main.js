@@ -4,8 +4,8 @@
 
 	var RGBChange = function() {
 	  $('#RGB').css('background', 'rgb('+r.getValue()+','+g.getValue()+','+b.getValue()+')')
-	};	
-		
+	};
+
 /*scroll to top*/
 
 $(document).ready(function(){
@@ -37,15 +37,15 @@ $(document).ready(function(){
                 data:{size:SizeAttr},
                 success:function(resp){
                 	var arr=resp.split("#");
-                    $("#dynamic_price").html('US $'+arr[0]);
+                    $("#dynamic_price").html('MX $'+arr[0]);
                     $("#dynamicPriceInput").val(arr[0]);
                     if(arr[1]==0){
 						$("#buttonAddToCart").hide();
-						$("#availableStock").text("Out Of Stock");
+						$("#availableStock").text("Agotado");
                         $("#inputStock").val(0);
 					}else{
                         $("#buttonAddToCart").show();
-                        $("#availableStock").text("In Stock");
+                        $("#availableStock").text("Disponible");
                         $("#inputStock").val(arr[1]);
 					}
                 },error:function () {
