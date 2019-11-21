@@ -58,7 +58,7 @@
                                 <a href="#eventos" class="font_header"><p>Eventos</p></a>
                             </div>
                             <div class="col-sm-2">
-                                <a href="{{'contacto'}}" class="font_header"><p>Contacto</p></a>
+                                <a href="{{'/contacto'}}" class="font_header"><p>Contacto</p></a>
                             </div>
                         </div>
                     </div>

@@ -29,7 +29,13 @@
                                                 <a href="{{url('/product-detail',$product->id)}}"><img src="{{url('products/small/',$product->image)}}" alt="" width="30em" height="200em"/></a>
                                                 <br><br>
                                                 <h2><img src="{{asset('frontEnd/imgs/miniaturas/carrito.svg')}}" alt="" width="3em"
-                                                         height="40px"/> <br><br>$</a> {{$product->price}}</h2>
+                                                         height="40px"/> <br><br>$</a>
+                                                    @if(Auth::check())
+                                                        {{$product->price_u}}
+                                                    @else
+                                                        {{$product->price}}
+                                                    @endif
+                                                    </h2>
                                                 <p>{{$product->p_name}}</p>
 
                                             </div>

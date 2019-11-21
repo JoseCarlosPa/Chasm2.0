@@ -13,6 +13,7 @@
 /* FrontEnd Location */
 Route::get('/','IndexController@index');
 Route::get('/tienda','IndexController@tienda')->name('tienda');
+Route::get('/contacto','IndexController@contacto')->name('contacto');
 Route::get('/list-products','IndexController@shop');
 Route::get('/cat/{id}','IndexController@listByCat')->name('cats');
 Route::get('/product-detail/{id}','IndexController@detialpro');
