@@ -111,7 +111,7 @@
                                 <li>Total <span>$ {{$total_price}}</span></li>
                             @endif
                         </ul>
-                        <div style="margin-left: 20px;"><a class="btn btn-default check_out" href="{{url('/check-out')}}">Revisar</a></div>
+                        <div style="margin-left: 20px;"><a class="btn btn-default check_out" href="{{url('/check-out')}}">Ordenar</a></div>
                     </div>
                 </div>
             </div>

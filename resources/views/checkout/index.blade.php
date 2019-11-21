@@ -97,7 +97,7 @@
                                         <input type="text" class="form-control" name="shipping_mobile" value="" id="shipping_mobile" placeholder="Shipping Mobile">
                                         <span class="text-danger">{{$errors->first('shipping_mobile')}}</span>
                                     </div>
-                                    <button type="submit" class="btn btn-primary" style="float: right;">CheckOut</button>
+                                    <button type="submit" class="btn btn-primary" style="float: right;">Ordenar</button>
                                 </div><!--/sign up form-->
                             </div>
                         </div>

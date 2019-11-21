@@ -8,7 +8,7 @@
     </div>
     <br><br>
     <div class="container">
-        <h3 class="text-center">TU PEDIDO A SIDO MANDADO</h3>
+        <h3 class="text-center">TU PEDIDO ESTA LISTO</h3>
         <p class="text-center">Tu numero de pedido es <b>{{$who_buying->id}}</b> y el total a pagar es de <b>$ {{$who_buying->grand_total}}</b> </p>
         <p class="text-center">Porfavor has click en el boton de comprar</p>
 

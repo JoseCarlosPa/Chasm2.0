@@ -136,9 +136,9 @@
                         <div class="payment-options">
                             <span>Selecccionar metodo de pago : </span>
                             <span>
-                            <label><input type="radio" name="payment_method" value="Paypal"> Paypal</label>
+                            <label><input type="radio" name="payment_method" value="Paypal" checked > Paypal</label>
                         </span>
-                            <button type="submit" class="btn btn-primary" style="float: right;">Order Now</button>
+                            <button type="submit" class="btn btn-primary" style="float: right;">Ordenar ahora</button>
                         </div>
                     </section>
 
