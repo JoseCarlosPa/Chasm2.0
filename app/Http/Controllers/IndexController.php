@@ -15,7 +15,7 @@ class IndexController extends Controller
         return view('frontEnd.index',compact('products'));
     }
     public function tienda(){
-        $products=Products_model::all();
+        $products=Products_model::paginate(6);
         return view('frontEnd.tienda',compact('products'));
     }
     public function contacto(){
@@ -23,12 +23,13 @@ class IndexController extends Controller
     }
 
     public function shop(){
-        $products=Products_model::all();
+        $products=Products_model::paginate(6);
         $byCate="";
         return view('frontEnd.products',compact('products','byCate'));
     }
     public function listByCat($id){
-        $list_product=Products_model::where('categories_id',$id)->get();
+
+        $list_product=Products_model::where('categories_id',$id)-> paginate(6) ;
         $byCate=Category_model::select('name')->where('id',$id)->first();
         return view('frontEnd.products',compact('list_product','byCate'));
     }

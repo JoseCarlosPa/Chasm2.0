@@ -24,7 +24,6 @@
                     ?>
                     <div class ="row">
                     @foreach($products as $product)
-
                             @if($product->category->status==1)
                                 <div class="col-sm-4">
                                     <div class="product-image-wrapper card card_shadow">
@@ -34,7 +33,13 @@
                                                 <a href="{{url('/product-detail',$product->id)}}"><img src="{{url('products/small/',$product->image)}}" alt="" width="30em" height="200em"/></a>
                                                 <br><br>
                                                 <h2><img src="{{asset('frontEnd/imgs/miniaturas/carrito.svg')}}" alt="" width="3em"
-                                                         height="40px"/> <br><br>$</a> {{$product->price}}</h2>
+                                                         height="40px"/> <br><br>$</a>
+                                                    @if(Auth::check())
+                                                        {{$product->price_u}}
+                                                    @else
+                                                        {{$product->price}}
+                                                    @endif
+                                                </h2>
                                                 <p>{{$product->p_name}}</p>
 
                                             </div>
@@ -44,12 +49,11 @@
                             @endif
                     @endforeach
                         </div>
-                    {{--<ul class="pagination">
-                        <li class="active"><a href="">1</a></li>
-                        <li><a href="">2</a></li>
-                        <li><a href="">3</a></li>
-                        <li><a href="">&raquo;</a></li>
-                    </ul>--}}
+                    <div class ="row">
+                        <div class ="col-sm-12 text-center">
+                            <p>{{ $products->links() }}</p>
+                        </div>
+                    </div>
                 </div><!--features_items-->
             </div>
         </div>

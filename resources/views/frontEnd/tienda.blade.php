@@ -13,13 +13,11 @@
                 <div class="col-sm-3">
                     @include('frontEnd.layouts.category_menu')
                 </div>
-
                 <div class="col-sm-9 padding-right">
                     <div class="features_items"><!--features_items-->
                         <h2 class="title text-center">Articulos</h2>
                         <div class ="row">
                         @foreach($products as $product)
-
                             @if($product->category->status==1)
                                 <div class="col-sm-4">
                                     <div class="product-image-wrapper card card_shadow">
@@ -37,17 +35,21 @@
                                                     @endif
                                                     </h2>
                                                 <p>{{$product->p_name}}</p>
-
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             @endif
-
                         @endforeach
+
                         </div>
                     </div><!--features_items-->
+                </div>
+            </div>
 
+            <div class ="row">
+                <div class ="col-sm-12 text-center">
+                    <p>{{ $products->links() }}</p>
                 </div>
             </div>
         </div>
