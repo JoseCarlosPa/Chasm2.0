@@ -22,6 +22,11 @@ class IndexController extends Controller
         return view('frontEnd.contacto');
     }
 
+    public function terminos(){
+        return view('frontEnd.terminos');
+    }
+
+
     public function shop(){
         $products=Products_model::paginate(6);
         $byCate="";

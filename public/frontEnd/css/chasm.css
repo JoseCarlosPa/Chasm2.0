@@ -1,3 +1,7 @@
+.margin_tienda2{
+    margin-left: 8%;
+}
+
 .card_shadow{
     -webkit-box-shadow: 4px 2px 28px -6px rgba(0,0,0,0.75);
     -moz-box-shadow: 4px 2px 28px -6px rgba(0,0,0,0.75);
@@ -47,7 +51,7 @@ html {
     width: 65%;
     margin-left: 17.5%;
     margin-right: 17.5%;
-    height: 7.9em;
+    height: 8.4em;
     background: white;
     position: relative;
     border: black;
@@ -56,7 +60,7 @@ html {
 #trapezoid:before {
     content: '';
     border-right: 2em solid white;
-    border-bottom: 7.9em solid transparent;
+    border-bottom: 8.4em solid transparent;
     position: absolute;
     left: -2em;
     top: 0;
@@ -66,7 +70,7 @@ html {
 #trapezoid:after {
     content: '';
     border-left: 2em solid white;
-    border-bottom: 7.9em solid transparent;
+    border-bottom: 8.4em solid transparent;
     position: absolute;
     right: -2em;
     top: 0;
@@ -75,7 +79,7 @@ html {
 
 .font_header {
     font-family: Montserrat;
-    font-weight: bolder;
+    font-weight: bold;
     font-size: 100%;
     letter-spacing: 0;
     color: #07070F;
@@ -87,12 +91,12 @@ html {
     font-family: Montserrat;
     text-decoration: none;
     font-weight: bolder;
-    font-size: 100%;
+    font-size: 110%;
     letter-spacing: 0;
     color: #07070F;
     opacity: 1;
     text-align: center;
-    text-shadow: -7px 0px 20px #FF9903;
+    text-shadow: -7px 0px 40px #fcaf17;
 }
 
 .font_header_bienvendio {

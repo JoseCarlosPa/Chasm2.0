@@ -64,11 +64,11 @@
                     </div>
                     <div class="col-sm-3 text-center imgs_redes">
                         <a href="https://www.facebook.com/chasmmochilas" target="_blank"><img
-                                src="{{asset('frontEnd/images/home/facebook1.svg')}}" alt="" width="22%" height="100%"/></a>
+                                src="{{asset('frontEnd/images/home/facebook1.svg')}}" alt="" width="20%" height="100%"/></a>
                         <a href="https://www.instagram.com/mochilaschasm/" target="_blank"><img
-                                src="{{asset('frontEnd/images/home/insta.svg')}}" alt="" width="22%" height="100%"/></a>
+                                src="{{asset('frontEnd/images/home/insta.svg')}}" alt="" width="20%" height="100%"/></a>
                         <a href="https://twitter.com/MochilasChasm" target="_blank"><img
-                                src="{{asset('frontEnd/images/home/tweeter.svg')}}" alt="" width="22%"
+                                src="{{asset('frontEnd/images/home/tweeter.svg')}}" alt="" width="20%"
                                 height="100%"/></a>
                     </div>
                 </div>

@@ -115,7 +115,7 @@
             <br><br><br><br>
             <div class="row">
                 <div class="col-sm-12">
-                    <p id="terminos">Terminos y condiciones - Politicas de privacidad</p>
+                    <p id="terminos"><a href ="{{'/terminos'}}">Terminos y condiciones - Politicas de privacidad</a></p>
                 </div>
             </div>
         </div>

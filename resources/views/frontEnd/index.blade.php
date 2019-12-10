@@ -8,9 +8,9 @@
         <!--Contenedor para banners-->
         <div id="header_banner" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#header_banner" data-slide-to="0" class="active"></li>
+                <li data-target="#header_banner" data-slide-to="1"></li>
+                <li data-target="#header_banner" data-slide-to="2"></li>
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -36,7 +36,7 @@
         <!--Background de papel-->
         <div class="row">
             <div class="col-sm-12 index_papel1">
-                <br><br><br><br><br>
+                <br><br><br><br>
             </div>
         </div>
     </div>
@@ -88,7 +88,7 @@
         </div>
 
         <!--Inicio de Tienda-->
-        <div class="row">
+        <div class="row margin_tienda2">
             <div class="col-sm-4">
                 <a href="{{'/tienda'}}" class="links_cards">
                     <div class="card card_shadow" style="width: 18rem; height: 35rem;">
@@ -137,7 +137,7 @@
 
         <!--Segunda linea de Tienda-->
         <br><br><br>
-        <div class="row">
+        <div class="row margin_tienda2">
             <div class="col-sm-4">
                 <a href="{{'/tienda'}}" class="links_cards">
                     <div class="card card_shadow" style="width: 18rem;height: 35rem;">
@@ -190,7 +190,7 @@
 
 
         <!--Boton de "IR a la tienda"-->
-        <div class="row ">
+        <div class="row">
             <div class="col-sm-12 text-center align-middle ">
                 <a href="{{'/tienda'}}" class="links_tienda">
                     <div id="trapezoid2">
@@ -233,7 +233,7 @@
         </div>
         <div class="row">
             <div class="col-sm-12">
-                <div class="index_papel2"><br><br><br><br><br></div>
+                <div class="index_papel2"><br><br><br><br><br><br></div>
             </div>
         </div>
     </div>
@@ -252,7 +252,7 @@
 
     <br><br><br>
     <div class="container_index">
-        <div class="row">
+        <div class="row margin_tienda2">
             <div class="col-sm-6">
                 <div class="contenedor_imagen zoom">
                     <img src="{{asset('frontEnd/images/blogs/1.png')}}" width="100%" height="100%">
@@ -269,7 +269,7 @@
             </div>
         </div>
         <br><br>
-        <div class="row">
+        <div class="row margin_tienda2">
             <div class="col-sm-6">
                 <div class="contenedor_imagen zoom">
                     <img src="{{asset('frontEnd/images/blogs/3.png')}}" width="100%" height="100%">
