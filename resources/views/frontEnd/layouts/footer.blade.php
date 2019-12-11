@@ -1,3 +1,5 @@
+@if ($agent->isDesktop())
+
 <footer class ="">
     <div class="banner_container">
         <div class="row">
@@ -127,3 +129,5 @@
 
 
 </html>
+
+@endif
