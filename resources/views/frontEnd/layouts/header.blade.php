@@ -180,7 +180,7 @@
 @endif
 <!-----------------------------------Vista de mobil --------------------------->
 @if ($agent->isMobile())
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="row">
             <div class="col-sm-12">
                 <a href="{{url('/')}}"><img src="{{asset('frontEnd/images/home/logo.png')}}" alt="" width="40%"
