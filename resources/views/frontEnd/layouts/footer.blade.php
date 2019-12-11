@@ -45,11 +45,6 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-12">
-                            <li>Eventos</li>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-12">
                             <a href ="{{'contacto'}}"><li>Contacto</li></a>
                         </div>
                     </div>
@@ -115,7 +110,15 @@
             <br><br><br><br>
             <div class="row">
                 <div class="col-sm-12">
-                    <p id="terminos"><a href ="{{'/terminos'}}">Terminos y condiciones - Politicas de privacidad</a></p>
+                    <p id="terminos"><a href ="{{'/terminos'}}">- Terminos y condiciones - Politicas de privacidad -</a></p>
+                </div>
+            </div>
+        </div>
+        <div class ="row">
+            <div class ="col-sm-12">
+                <div class ="trapecio_footer">
+                    <img src="{{asset('frontEnd/images/home/logo.png')}}" alt="" width="90%"
+                    height="100%"/>
                 </div>
             </div>
         </div>
