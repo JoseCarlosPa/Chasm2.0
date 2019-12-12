@@ -287,16 +287,18 @@
             <div class="row margin_tienda2">
                 <div class="col-sm-6">
                     <div class="contenedor_imagen zoom">
-                        <img src="{{asset('frontEnd/images/blogs/1.png')}}" width="100%" height="100%">
-                        <div class="texto-encima">10/10/2019</div>
-                        <div class="centrado">LA VERDAD SOBRE LOS <br>CALABOZOS</div>
+                        <a href="https://mochilaschasm.com/blog/2019/11/04/nuevo-sitio/"><img src="{{asset('frontEnd/images/blogs/1.png')}}" width="100%" height="100%"></a>
+                        <br><br><br><br><br><br>
+                        <div class="texto-encima">17/Aug/2019</div>
+
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="contenedor_imagen zoom">
-                        <img src="{{asset('frontEnd/images/blogs/2.png')}}" width="100%" height="100%">
-                        <div class="texto-encima">6/09/2019</div>
-                        <div class="centrado">SI, EXISTÍAN LAS <br>MAZMORRAS</div>
+                        <a href="https://mochilaschasm.com/blog/2019/12/05/queretarol/"><img src="{{asset('frontEnd/images/blogs/2.png')}}" width="100%" height="100%"></a>
+                        <br><br><br><br><br><br>
+                        <div class="texto-encima">17/Aug/2019</div>
+
                     </div>
                 </div>
             </div>
@@ -304,16 +306,18 @@
             <div class="row margin_tienda2">
                 <div class="col-sm-6">
                     <div class="contenedor_imagen zoom">
-                        <img src="{{asset('frontEnd/images/blogs/3.png')}}" width="100%" height="100%">
-                        <div class="texto-encima">14/06/2019</div>
-                        <div class="centrado">EL ORIGEN DE LOS <br>OVNIS</div>
+                        <a href="https://mochilaschasm.com/blog/2019/12/10/es-genial-ahora-por-que-dungeons-dragons-esta-lanzando-su-hechizo-nuevamente/"><img src="{{asset('frontEnd/images/blogs/3.png')}}" width="100%" height="100%"></a>
+                        <br><br><br><br><br><br>
+                        <div class="texto-encima">17/Aug/2019</div>
+
                     </div>
                 </div>
                 <div class="col-sm-6">
                     <div class="contenedor_imagen zoom">
-                        <img src="{{asset('frontEnd/images/blogs/4.png')}}" width="100%" height="100%">
-                        <div class="texto-encima">7/08/2019</div>
-                        <div class="centrado">EL AREA 51</div>
+                        <a href="https://mochilaschasm.com/blog/2019/12/05/queretarol/"><img src="{{asset('frontEnd/images/blogs/4.png')}}" width="100%" height="100%"></a>
+                        <br><br><br><br><br><br>
+                        <div class="texto-encima">17/Aug/2019</div>
+
                     </div>
                 </div>
             </div>
@@ -486,9 +490,10 @@
             <div class="row margin_tienda2_mobil">
                 <div class="col-sm-12">
                     <div class="contenedor_imagen zoom">
-                        <img src="{{asset('frontEnd/images/blogs/1.png')}}" width="100%" height="100%">
-                        <div class="texto-encima">10/10/2019</div>
-                        <div class="centrado">LA VERDAD SOBRE LOS <br>CALABOZOS</div>
+                        <a href="https://mochilaschasm.com/blog/2019/11/04/nuevo-sitio/"><img src="{{asset('frontEnd/images/blogs/1.png')}}" width="100%" height="100%"></a>
+                        <br><br><br><br><br>
+                        <div class="texto-encima">17/Aug/2019</div>
+
                     </div>
                 </div>
             </div>
@@ -496,9 +501,10 @@
             <div class="row margin_tienda2_mobil">
                 <div class="col-sm-12">
                     <div class="contenedor_imagen zoom">
-                        <img src="{{asset('frontEnd/images/blogs/2.png')}}" width="100%" height="100%">
-                        <div class="texto-encima">6/09/2019</div>
-                        <div class="centrado">SI, EXISTÍAN LAS <br>MAZMORRAS</div>
+                        <a href="https://mochilaschasm.com/blog/2019/12/05/queretarol/"><img src="{{asset('frontEnd/images/blogs/2.png')}}" width="100%" height="100%"></a>
+                        <br><br><br><br><br>
+                        <div class="texto-encima">17/Aug/2019</div>
+
                     </div>
                 </div>
             </div>
@@ -506,9 +512,10 @@
             <div class="row margin_tienda2_mobil">
                 <div class="col-sm-12">
                     <div class="contenedor_imagen zoom">
-                        <img src="{{asset('frontEnd/images/blogs/3.png')}}" width="100%" height="100%">
-                        <div class="texto-encima">14/06/2019</div>
-                        <div class="centrado">EL ORIGEN DE LOS <br>OVNIS</div>
+                        <a href="https://mochilaschasm.com/blog/2019/12/10/es-genial-ahora-por-que-dungeons-dragons-esta-lanzando-su-hechizo-nuevamente/"><img src="{{asset('frontEnd/images/blogs/3.png')}}" width="100%" height="100%"></a>
+                        <br><br><br><br><br>
+                        <div class="texto-encima">17/Aug/2019</div>
+
                     </div>
                 </div>
             </div>
@@ -516,9 +523,10 @@
             <div class="row margin_tienda2_mobil">
                 <div class="col-sm-12">
                     <div class="contenedor_imagen zoom">
-                        <img src="{{asset('frontEnd/images/blogs/4.png')}}" width="100%" height="100%">
-                        <div class="texto-encima">7/08/2019</div>
-                        <div class="centrado">EL AREA 51</div>
+                        <a hre="https://mochilaschasm.com/blog/2019/12/10/queretaro-nocturno/"><img src="{{asset('frontEnd/images/blogs/4.png')}}" width="100%" height="100%"></a>
+                        <br><br><br><br><br>
+                        <div class="texto-encima">17/Aug/2019</div>
+
                     </div>
                 </div>
             </div>
