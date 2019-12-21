@@ -251,9 +251,9 @@
                 </div>
                 <div class="col-sm-2">
                     <a href="http://www.modiphius.com" target="_blank"><img
-                            src="{{asset('frontEnd/images/home/modifus.png')}}" width="100%" height="100%"></a>
+                            src="{{asset('frontEnd/images/home/modifus.png')}}" width="100%" height="70%" style="padding-top: 25%"></a>
                 </div>
-                <div class="col-sm-2">
+                <div class="col-sm-2 ">
                     <a href="http://www.nosolorol.com" target="_blank"><img
                             src="{{asset('frontEnd/images/home/nosolor.png')}}" width="100%" height="100%"></a>
                 </div>
@@ -265,7 +265,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-12">
-                    <div class="index_papel2"><br><br><br><br><br><br></div>
+                    <div class="index_papel2"><br><br><br><br><br></div>
                 </div>
             </div>
         </div>
