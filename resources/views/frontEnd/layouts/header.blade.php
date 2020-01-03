@@ -180,7 +180,7 @@
 @endif
 <!-----------------------------------Vista de mobil --------------------------->
 @if ($agent->isMobile())
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id ="navbar">
         <div class="row">
             <div class="col-sm-12">
                 <a href="{{url('/')}}"><img src="{{asset('frontEnd/images/home/logo.png')}}" alt="" width="40%"
@@ -237,6 +237,20 @@
 
         </div>
     </nav>
+
+
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function() {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-400px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
 @endif
 
 
