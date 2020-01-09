@@ -14,13 +14,13 @@
             </ol>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block w-100" src="{{asset('frontEnd/images/banners/mochilas.png')}}" alt="First slide">
+                    <img class="d-block w-100" src="{{asset('frontEnd/images/banners/mochilas1.jpg')}}" alt="First slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="{{asset('frontEnd/images/banners/Banner_Mochilas_2.jpg')}}" alt="Second slide">
+                    <img class="d-block w-100" src="{{asset('frontEnd/images/banners/mochilas2.jpg')}}" alt="Second slide">
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block w-100" src="{{asset('frontEnd/images/banners/Otro_Banner_Dados.png')}}" alt="Third slide">
+                    <img class="d-block w-100" src="{{asset('frontEnd/images/banners/mochilas3.jpg')}}" alt="Third slide">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#header_banner" role="button" data-slide="prev">
@@ -34,15 +34,11 @@
         </div>
 
         <!--Background de papel-->
-        <div class="row">
-            <div class="col-sm-12 index_papel1">
-                <br><br><br><br>
-            </div>
-        </div>
+
     </div>
 
     <div id ="nosotros"></div>
-    <br><br><br><br><br><br><br><br>
+    <br><br><br><br><br><br>
     <!--Titulo de "Nosotros"-->
 
     <div class="row">
@@ -233,7 +229,7 @@
         </div>
         <div class="row">
             <div class="col-sm-12">
-                <div class="index_papel2"><br><br><br><br><br><br></div>
+                <div class="index_papel2"><br><br><br><br><br></div>
             </div>
         </div>
     </div>
