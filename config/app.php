@@ -146,6 +146,7 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Jenssegers\Agent\AgentServiceProvider::class,
 
         /*
          * Package Service Providers...
@@ -211,6 +212,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
         //'Image'=>Intervention\Image\Facades\Image::class,
         'Image' => Intervention\Image\ImageManagerStatic::class,
+        'Agent' => Jenssegers\Agent\Facades\Agent::class,
     ],
 
 ];

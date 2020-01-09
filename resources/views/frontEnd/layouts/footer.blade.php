@@ -19,9 +19,11 @@
                         <input class ="input_footer" type="email" name="mail" placeholder="Correo electronico"><button class="button_send" type="submit">-></button>
                     </form>
                 </div>
+
                 <div class="col-sm-3">
                     <div class="row">
                         <div class="col-sm-12">
+                            <br>
                             <h5 class="titel_footer">EXPLORA</h5>
                         </div>
                     </div>
@@ -56,6 +58,7 @@
 
                     <div class="row">
                         <div class="col-sm-12">
+                            <br>
                             <h5 class="titel_footer">Nuestros Amgios</h5>
                         </div>
                     </div>
@@ -116,6 +119,7 @@
                 </div>
             </div>
         </div>
+        @if((new \Jenssegers\Agent\Agent())->isDesktop())
         <div class ="row">
             <div class ="col-sm-12">
                 <div class ="trapecio_footer">
@@ -138,5 +142,8 @@
 
 
 </html>
+@endif
+
+
 
 

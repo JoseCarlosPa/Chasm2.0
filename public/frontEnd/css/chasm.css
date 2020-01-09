@@ -181,6 +181,37 @@ html {
 }
 
 
+#trapezoid4 {
+    width: 35%;
+    margin-left: 33%;
+    height: 2em;
+    box-shadow: 10px 10px 10px grey;
+    text-align: center;
+    align-content: center;
+    vertical-align: middle;
+    background: orange;
+    position: relative;
+}
+
+#trapezoid4:before {
+    content: '';
+    border-right: 2em solid orange;
+    border-bottom: 2em solid transparent;
+    position: absolute;
+    left: -2em;
+    top: 0;
+}
+
+#trapezoid4:after {
+    content: '';
+    border-left: 2em solid orange;
+    border-bottom: 2em solid transparent;
+    position: absolute;
+    right: -2em;
+    top: 0;
+}
+
+
 .trapezoid3 {
     width: 35%;
     margin-left: 33%;
@@ -595,7 +626,19 @@ ul.horizontal li{
     margin-left: 80%;
 }
 
+#irtienda_m{
+    margin-top: 4%;
+    font-size: 100%;
+    color: white;
+}
 
+.margin_tienda2_mobil{
+    margin-left: 7%;
+}
+
+#title_m{
+    margin-left: 8%;
+}
 /*
 FIn de imagenes----------------
  */
