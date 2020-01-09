@@ -2,39 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Jenssegers\Agent\Agent;
 use App\Category_model;
 use App\ImageGallery_model;
 use App\ProductAtrr_model;
 use App\Products_model;
 use Illuminate\Http\Request;
-
-
-$agent = new Agent();
-$agent->platform();
-// Ubuntu, Windows, OS X, ...
-$agent->browser();
-// Chrome, IE, Safari, Firefox, ...
-$browser = $agent->browser();
-$version = $agent->version($browser);
-$platform = $agent->platform();
-$version = $agent->version($platform);
-$agent->is('Windows');
-$agent->is('Firefox');
-$agent->is('iPhone');
-$agent->is('OS X');
-$agent->isAndroidOS();
-$agent->isNexus();
-$agent->isSafari();
-$agent->languages();
-// ['nl-nl', 'nl', 'en-us', 'en']
-$agent->device();
-// iPhone, Nexus, AsusTablet, ...
-$agent->isDesktop();
-$agent->isPhone();
-$agent->isMobile();
-$agent->isTablet();
-
 
 class IndexController extends Controller
 {

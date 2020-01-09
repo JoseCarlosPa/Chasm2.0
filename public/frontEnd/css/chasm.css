@@ -17,10 +17,6 @@
     margin-left: 8%;
 }
 
-.margin_tienda2_mobil{
-    margin-left: 2%;
-}
-
 .card_shadow{
     -webkit-box-shadow: 4px 2px 28px -6px rgba(0,0,0,0.75);
     -moz-box-shadow: 4px 2px 28px -6px rgba(0,0,0,0.75);
@@ -233,6 +229,7 @@ html {
 .titel_footer {
     color: white;
 }
+
 ul {
     color: orange;
 
@@ -599,7 +596,6 @@ ul.horizontal li{
 .margin_numeros{
     margin-left: 80%;
 }
-
 
 
 /*
