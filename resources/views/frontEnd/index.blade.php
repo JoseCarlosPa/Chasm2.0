@@ -39,15 +39,9 @@
             </div>
 
             <!--Background de papel-->
-            <div class="row">
-                <div class="col-sm-12 index_papel1">
-                    <br><br><br><br>
-                </div>
-            </div>
         </div>
-
         <div id="nosotros"></div>
-        <br><br><br><br><br><br><br><br>
+        <br><br><br><br><br><br><br>
         <!--Titulo de "Nosotros"-->
 
         <div class="row">
@@ -100,53 +94,44 @@
             <div class="row margin_tienda2">
                 <div class="col-sm-4">
                     <a href="{{'/tienda'}}" class="links_cards">
-                        <div class="card card_shadow" style="width: 18rem; height: 35rem;">
+                        <div class="card card_shadow" style="width: 18rem; height: 25rem;">
                             <div class="trapezoid3 "><p style="margin-top: 10%">Comprar</p></div>
-                            <img class="card-img-top" src="{{asset('frontEnd/imgs/miniaturas/1.png')}}"
+                            <img class="card-img-top" src="{{asset('frontEnd/imgs/miniaturas/1.JPG')}}"
                                  alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">UNIDAD ARJUNA</h5>
-                                <p class="card-text">Las tropas Arjuna son ideales para controlar de cerca la mesa de
-                                    juego,
-                                    aprovechar su Kiranbot sincronizado y poder aprovechar...</p>
+                                <h5 class="card-title">Mochila A1</h5>
+
                                 <img src="{{asset('frontEnd/imgs/miniaturas/carrito.svg')}}" width="20%" height="20%">
-                                $299.00
+                                $1850.00
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-sm-4">
                     <a href="" class="links_cards">
-                        <div class="card card_shadow" style="width: 18rem;height: 35rem;">
+                        <div class="card card_shadow" style="width: 18rem;height: 25rem;">
                             <div class="trapezoid3 "><p style="margin-top: 10%">Comprar</p></div>
                             <img class="card-img-top" src="{{asset('frontEnd/imgs/miniaturas/2.png')}}"
                                  alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">UNIDAD ARJUNA</h5>
-                                <p class="card-text">Las tropas Arjuna son ideales para controlar de cerca la mesa de
-                                    juego,
-                                    aprovechar su Kiranbot sincronizado y poder aprovechar...</p>
-
+                                <h5 class="card-title">	Aristeia! Dice Pack</h5>
                                 <img src="{{asset('frontEnd/imgs/miniaturas/carrito.svg')}}" width="20%" height="20%">
-                                $299.00
+                                $250.00
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-sm-4">
                     <a href="{{'/tienda'}}" class="links_cards">
-                        <div class="card card_shadow" style="width: 18rem;height: 35rem;">
+                        <div class="card card_shadow" style="width: 18rem;height: 25rem;">
                             <div class="trapezoid3 "><p style="margin-top: 10%">Comprar</p></div>
                             <img class="card-img-top" src="{{asset('frontEnd/imgs/miniaturas/3.png')}}"
                                  alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">UNIDAD ARJUNA</h5>
-                                <p class="card-text">Las tropas Arjuna son ideales para controlar de cerca la mesa de
-                                    juego,
-                                    aprovechar su Kiranbot sincronizado y poder aprovechar...</p>
+                                <h5 class="card-title">Wildfire (de Infinity)</h5>
 
                                 <img src="{{asset('frontEnd/imgs/miniaturas/carrito.svg')}}" width="20%" height="20%">
-                                $299.00
+                                $960.00
                             </div>
                         </div>
                     </a>
@@ -158,16 +143,12 @@
             <div class="row margin_tienda2">
                 <div class="col-sm-4">
                     <a href="{{'/tienda'}}" class="links_cards">
-                        <div class="card card_shadow" style="width: 18rem;height: 35rem;">
+                        <div class="card card_shadow" style="width: 18rem;height: 25rem;">
                             <div class="trapezoid3 "><p style="margin-top: 10%">Comprar</p></div>
                             <img class="card-img-top" src="{{asset('frontEnd/imgs/miniaturas/4.png')}}"
                                  alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">UNIDAD ARJUNA</h5>
-                                <p class="card-text">Las tropas Arjuna son ideales para controlar de cerca la mesa de
-                                    juego,
-                                    aprovechar su Kiranbot sincronizado y poder aprovechar...</p>
-
+                                <h5 class="card-title">Bolsa de dados</h5>
                                 <img src="{{asset('frontEnd/imgs/miniaturas/carrito.svg')}}" width="20%" height="20%">
                                 $299.00
                             </div>
@@ -176,36 +157,28 @@
                 </div>
                 <div class="col-sm-4">
                     <a href="" class="links_cards">
-                        <div class="card card_shadow" style="width: 18rem;height: 35rem;">
+                        <div class="card card_shadow" style="width: 18rem;height: 25rem;">
                             <div class="trapezoid3 "><p style="margin-top: 10%">Comprar</p></div>
                             <img class="card-img-top" src="{{asset('frontEnd/imgs/miniaturas/5.png')}}"
                                  alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">UNIDAD ARJUNA</h5>
-                                <p class="card-text">Las tropas Arjuna son ideales para controlar de cerca la mesa de
-                                    juego,
-                                    aprovechar su Kiranbot sincronizado y poder aprovechar....</p>
-
+                                <h5 class="card-title">T2</h5>
                                 <img src="{{asset('frontEnd/imgs/miniaturas/carrito.svg')}}" width="20%" height="20%">
-                                $299.00
+                                $400.00
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-sm-4">
                     <a href="{{'/tienda'}}" class="links_cards">
-                        <div class="card card_shadow" style="width: 18rem;height: 35rem;">
+                        <div class="card card_shadow" style="width: 18rem;height: 25rem;">
                             <div class="trapezoid3 "><p style="margin-top: 10%">Comprar</p></div>
                             <img class="card-img-top" src="{{asset('frontEnd/imgs/miniaturas/6.png')}}"
                                  alt="Card image cap">
                             <div class="card-body">
-                                <h5 class="card-title">UNIDAD ARJUNA</h5>
-                                <p class="card-text">Las tropas Arjuna son ideales para controlar de cerca la mesa de
-                                    juego,
-                                    aprovechar su Kiranbot sincronizado y poder aprovechar...</p>
-
+                                <h5 class="card-title">1 Bolsa de Dados</h5>
                                 <img src="{{asset('frontEnd/imgs/miniaturas/carrito.svg')}}" width="20%" height="20%">
-                                $299.00
+                                $120.00
                             </div>
                         </div>
                     </a>
@@ -265,7 +238,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-12">
-                    <div class="index_papel2"><br><br><br><br><br><br></div>
+                    <div class="index_papel2"><br><br><br><br><br></div>
                 </div>
             </div>
         </div>

@@ -50,19 +50,17 @@ class ProductsController extends Controller
             'description'=>'required',
             'price'=>'required|numeric',
             'price_u'=>'required|numeric',
-            'image'=>'required|image|mimes:png,jpg,jpeg|max:1000',
+            'image'=>'required|image|mimes:png,jpg,jpeg|max:9000',
         ]);
         $formInput=$request->all();
         if($request->file('image')){
             $image=$request->file('image');
             if($image->isValid()){
                 $fileName=time().'-'.str_slug($formInput['p_name'],"-").'.'.$image->getClientOriginalExtension();
-                $large_image_path=public_path('products/large/'.$fileName);
-                $medium_image_path=public_path('products/medium/'.$fileName);
-                $small_image_path=public_path('products/small/'.$fileName);
+
+                $small_image_path='products/small/'.$fileName;
                 //Resize Image
-                Image::make($image)->save($large_image_path);
-                Image::make($image)->resize(600,600)->save($medium_image_path);
+
                 Image::make($image)->resize(300,300)->save($small_image_path);
                 $formInput['image']=$fileName;
             }
@@ -112,7 +110,7 @@ class ProductsController extends Controller
             'p_color'=>'required',
             'description'=>'required',
             'price'=>'required|numeric',
-            'image'=>'image|mimes:png,jpg,jpeg|max:1000',
+            'image'=>'image|mimes:png,jpg,jpeg|max:9000',
         ]);
         $formInput=$request->all();
         if($update_product['image']==''){
@@ -120,12 +118,10 @@ class ProductsController extends Controller
                 $image=$request->file('image');
                 if($image->isValid()){
                     $fileName=time().'-'.str_slug($formInput['p_name'],"-").'.'.$image->getClientOriginalExtension();
-                    $large_image_path=public_path('products/large/'.$fileName);
-                    $medium_image_path=public_path('products/medium/'.$fileName);
-                    $small_image_path=public_path('products/small/'.$fileName);
+
+                    $small_image_path='products/small/'.$fileName;
                     //Resize Image
-                    Image::make($image)->save($large_image_path);
-                    Image::make($image)->resize(600,600)->save($medium_image_path);
+
                     Image::make($image)->resize(300,300)->save($small_image_path);
                     $formInput['image']=$fileName;
                 }
@@ -146,12 +142,10 @@ class ProductsController extends Controller
     public function destroy($id)
     {
         $delete=Products_model::findOrFail($id);
-        $image_large=public_path().'/products/large/'.$delete->image;
-        $image_medium=public_path().'/products/medium/'.$delete->image;
+
         $image_small=public_path().'/products/small/'.$delete->image;
         if($delete->delete()){
-            unlink($image_large);
-            unlink($image_medium);
+
             unlink($image_small);
         }
         return redirect()->route('product.index')->with('message','Eliminado con exito!');
@@ -159,17 +153,16 @@ class ProductsController extends Controller
     public function deleteImage($id){
         //Products_model::where(['id'=>$id])->update(['image'=>'']);
         $delete_image=Products_model::findOrFail($id);
-        $image_large=public_path().'/products/large/'.$delete_image->image;
-        $image_medium=public_path().'/products/medium/'.$delete_image->image;
+
         $image_small=public_path().'/products/small/'.$delete_image->image;
         if($delete_image){
             $delete_image->image='';
             $delete_image->save();
             ////// delete image ///
-            unlink($image_large);
-            unlink($image_medium);
+
             unlink($image_small);
         }
         return back();
     }
 }
+

@@ -5,7 +5,7 @@
             <div class="row ">
                 <div class="col-sm-2 text-center">
                     <div class="logo pull-left">
-                        <a href="{{url('/')}}"><img src="{{asset('frontEnd/images/home/logo.png')}}" alt="" width="90%"
+                        <a href="{{url('/')}}"><img src="{{asset('frontEnd/images/home/Logo.png')}}" alt="" width="90%"
                                                     height="100%"/></a>
                     </div>
                 </div>
