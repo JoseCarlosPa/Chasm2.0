@@ -1,5 +1,5 @@
 @extends('backEnd.layouts.master')
-@section('title','Add Products Page')
+@section('title','Agregar Prodcutos')
 @section('content')
     <div id="breadcrumb"> <a href="{{url('/admin')}}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Inicio</a> <a href="{{route('product.index')}}">Productos</a> <a href="{{route('product.create')}}" class="current">Añadir nuevo producto</a> </div>
     <div class="container-fluid">

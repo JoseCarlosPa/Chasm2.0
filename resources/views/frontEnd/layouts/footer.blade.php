@@ -137,12 +137,29 @@
                 </div>
             </div>
         </div>
+        @endif
+        @if((new \Jenssegers\Agent\Agent())->isMobile())
+            <div class ="row">
+                <div class ="col-sm-12">
+                    <div class ="trapecio_footer_movil">
+                        <div class ="row">
+                            <div class ="col-sm-12">
+                                <img src="{{asset('frontEnd/images/home/Logo_w.png')}}" height="70vh" width="70vh">
+                                <a href="https://www.facebook.com/chasmmochilas" style ="padding-left: 10%"><img src="{{asset('frontEnd/images/home/facebook.svg')}}" height="25vh" width="25hv"></a>
+                                <a href="https://www.instagram.com/mochilaschasm/"><img src="{{asset('frontEnd/images/home/insta.svg')}}" height="25hv" width="25hv"></a>
+                                <a href="https://twitter.com/MochilasChasm"><img src="{{asset('frontEnd/images/home/tweeter.svg')}}" height="25hv" width="25hv"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        @endif
     </div>
 </footer>
 
 
 </html>
-@endif
+
 
 
 

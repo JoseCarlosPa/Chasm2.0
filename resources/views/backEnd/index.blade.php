@@ -1,11 +1,16 @@
 @extends('backEnd.layouts.master')
 @section('title','Dashboard')
 @section('content')
-    <!--breadcrumbs-->
-    <!--End-breadcrumbs-->
 
-    <!--Action boxes-->
+
+   <div class ="row">
+       <div class ="col-sm-12">
+           <br>
+           <h2 style="text-align: center">Bienvendio a  CHASM</h2>
+       </div>
+   </div>
 @endsection
+
 @section('jsblock')
     <script src="{{asset('js/excanvas.min.js')}}"></script>
     <script src="{{asset('js/jquery.min.js')}}"></script>

@@ -1,5 +1,5 @@
 @extends('backEnd.layouts.master')
-@section('title','List Products')
+@section('title','Productos')
 @section('content')
     <div id="breadcrumb"> <a href="{{url('/admin')}}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Inicio</a> <a href="{{route('product.index')}}" class="current">Productos</a></div>
     <div class="container-fluid">

@@ -21,6 +21,7 @@
 <body>
 
 @include('backEnd.layouts.header')
+
 @include('backEnd.layouts.nav')
 
 <!--main-container-part-->

@@ -1,5 +1,5 @@
 @extends('backEnd.layouts.master')
-@section('title','List Coupons')
+@section('title','Cupones')
 @section('content')
     <div id="breadcrumb"> <a href="{{url('/admin')}}" title="Go to Home" class="tip-bottom"><i class="icon-home"></i> Inicio</a> <a href="{{route('coupon.index')}}" class="current">Coupones</a></div>
     <div class="container-fluid">
