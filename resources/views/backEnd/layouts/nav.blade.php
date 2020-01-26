@@ -20,10 +20,10 @@
                 <li><a href="{{route('coupon.index')}}">Lista de Cupones</a></li>
             </ul>
         </li>
-        <li class="submenu {{$menu_active==4? ' active':''}}"> <a href="#"><i class="icon icon-user"></i> <span>Usuarios</span></a>
+        <li class="submenu {{$menu_active==5? ' active':''}}"> <a href="#"><i class="icon icon-user"></i> <span>Usuarios</span></a>
             <ul>
-                <li><a href="">Agregar nuevo usuario</a></li>
-                <li><a href="">Lista de usuarios</a></li>
+                <li><a href="{{url('/login_page')}}">Agregar nuevo usuario</a></li>
+                <li><a href="{{route('users_admin.index')}}">Lista de usuarios</a></li>
             </ul>
         </li>
 

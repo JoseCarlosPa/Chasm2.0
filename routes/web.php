@@ -77,5 +77,8 @@ Route::group(['prefix'=>'admin','middleware'=>['auth','admin']],function (){
     /// ///////// Coupons Area //////////
     Route::resource('/coupon','CouponController');
     Route::get('delete-coupon/{id}','CouponController@destroy');
-///
+
+    /// ///////// User Area////////// ///
+    Route::resource('/users_admin','UsersAdminController');
+    Route::get('delete-users-admin/{id}','UsersAdminController@destroy');
 });

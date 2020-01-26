@@ -15,7 +15,7 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        $menu_active=0;
+        $menu_active=2;
         $categories=Category_model::all();
         return view('backEnd.category.index',compact('menu_active','categories'));
     }
