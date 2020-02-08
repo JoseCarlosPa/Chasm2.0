@@ -1,6 +1,7 @@
 @if((new \Jenssegers\Agent\Agent())->isDesktop())
 
     <div class="fixed-top">
+
         <div id="trapezoid">
             <div class="row ">
                 <div class="col-sm-2 text-center">
@@ -16,28 +17,31 @@
                             <div class="row">
                                 <div class="col-sm-12 bienvenidos_margen">
                                     <p>Bienvenido al juego</p>
+                                    <hr width="100%">
                                 </div>
                             </div>
-
                         </div>
+
                         <div class="col-sm-3 ">
                             <div class="row ">
-                                <div class="col-sm-4 puerta_margen">
-                                    <p><img src="{{asset('frontEnd/images/home/dungeon.png')}}" alt="" width="110%"
-                                            height="100%"/></p>
+                                <div class="col-sm-3 puerta_margen">
+                                    <p><img src="{{asset('frontEnd/images/home/dungeon.png')}}" alt="" width="45vw"
+                                            height="45vw"/></p>
                                 </div>
-                                <ul class="nav navbar-nav">
-                                    <br>
-                                    <li><a href="{{url('/viewcart')}}"><i class="fa fa-shopping-cart"></i> Carrito</a>
-                                    </li>
-                                    @if(Auth::check())
-                                        <li><a href="{{ url('/logout') }}"><i class="fa fa-lock"></i> Cerrar Sesion </a>
+                                <div class ="col-sm-9">
+                                    <ul class="nav navbar-nav font_carrito">
+                                        <br>
+                                        <li><a href="{{url('/viewcart')}}"><i class="fa fa-shopping-cart"></i> Carrito</a>
                                         </li>
-                                    @else
-                                        <li><a href="" data-toggle="modal" data-target=".bd-example-modal-lg"><i
-                                                    class="fa fa-lock"></i> Iniciar sesion</a></li>
-                                    @endif
-                                </ul>
+                                        @if(Auth::check())
+                                            <li><a href="{{ url('/logout') }}"><i class="fa fa-lock"></i> Cerrar Sesion </a>
+                                            </li>
+                                        @else
+                                            <li><a href="" data-toggle="modal" data-target=".bd-example-modal-lg"><i
+                                                        class="fa fa-lock"></i> Iniciar sesion</a></li>
+                                        @endif
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -64,18 +68,19 @@
                         </div>
                         <div class="col-sm-3 text-center imgs_redes">
                             <a href="https://www.facebook.com/chasmmochilas" target="_blank"><img
-                                    src="{{asset('frontEnd/images/home/facebook1.svg')}}" alt="" width="20%"
+                                    src="{{asset('frontEnd/images/home/facebook1.svg')}}" alt="" width="30vw"
                                     height="100%"/></a>
                             <a href="https://www.instagram.com/mochilaschasm/" target="_blank"><img
-                                    src="{{asset('frontEnd/images/home/insta.svg')}}" alt="" width="20%" height="100%"/></a>
+                                    src="{{asset('frontEnd/images/home/insta.svg')}}" alt="" width="30vw" height="100%"/></a>
                             <a href="https://twitter.com/MochilasChasm" target="_blank"><img
-                                    src="{{asset('frontEnd/images/home/tweeter.svg')}}" alt="" width="20%"
+                                    src="{{asset('frontEnd/images/home/tweeter.svg')}}" alt="" width="30vw"
                                     height="100%"/></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <br>
         <br>
     </div>
@@ -187,7 +192,7 @@
                                             height="100%" style="padding-right: 15%;"/></a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
-                        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation" >
+                        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -196,11 +201,11 @@
 
             </div>
         </div>
-        <div class ="row">
-            <div class ="col-sm-12">
+        <div class="row">
+            <div class="col-sm-12">
                 <a href="https://www.facebook.com/chasmmochilas" target="_blank"><img
                         src="{{asset('frontEnd/images/home/facebook1.svg')}}" alt="" width="20%"
-                        height="100%" /></a>
+                        height="100%"/></a>
                 <a href="https://www.instagram.com/mochilaschasm/" target="_blank"><img
                         src="{{asset('frontEnd/images/home/insta.svg')}}" alt="" width="20%" height="100%"/></a>
                 <a href="https://twitter.com/MochilasChasm" target="_blank"><img
