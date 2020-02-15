@@ -188,7 +188,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="row">
             <div class="col-sm-12">
-                <a href="{{url('/')}}"><img src="{{asset('frontEnd/images/home/logo.png')}}" alt="" width="40%"
+                <a href="{{url('/')}}"><img src="{{asset('frontEnd/images/home/Logo.png')}}" alt="" width="40%"
                                             height="100%" style="padding-right: 15%;"/></a>
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03"
@@ -231,6 +231,8 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link " href="{{'/contacto'}}">Contacto</a>
+                </li>
+                <li><a href="{{url('/viewcart')}}"><i class="fa fa-shopping-cart"></i> Carrito</a>
                 </li>
                 @if(Auth::check())
                     <li><a href="{{ url('/logout') }}"><i class="fa fa-lock"></i> Cerrar Sesion </a>
