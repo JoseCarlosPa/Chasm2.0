@@ -44,7 +44,12 @@
                     <input type="hidden" name="product_name" value="{{$detail_product->p_name}}">
                     <input type="hidden" name="product_code" value="{{$detail_product->p_code}}">
                     <input type="hidden" name="product_color" value="{{$detail_product->p_color}}">
-                    <input type="hidden" name="price" value="{{$detail_product->price}}" id="dynamicPriceInput">
+                    @if(Auth::check())
+                        <input type="hidden" name="price" value="{{$detail_product->price_u}}" id="dynamicPriceInput">
+                    @else
+                        <input type="hidden" name="price" value="{{$detail_product->price}}" id="">
+                    @endif
+
                     <div class="product-information"><!--/product-information-->
                         <img src="{{asset('frontEnd/images/product-details/new.jpg')}}" class="newarrival" alt="" />
                         <h2>{{$detail_product->p_name}}</h2>
@@ -58,7 +63,10 @@
                         </select>
                         </span><br>
                         <span>
-                            <span id="dynamic_price">MX ${{$detail_product->price}}</span>
+
+
+                            <span id="">MX ${{$detail_product->price}}</span>
+
                             <label>Cantidad:</label>
                             <input type="text" name="quantity" value="{{$totalStock}}" id="inputStock"/>
                             @if($totalStock>=0)

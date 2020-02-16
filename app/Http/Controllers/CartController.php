@@ -29,7 +29,6 @@ class CartController extends Controller
         }else{
             $stockAvailable=DB::table('product_att')->select('stock','sku')->where(['products_id'=>$inputToCart['products_id'],
                 'price'=>$inputToCart['price']])->first();
-            if($stockAvailable->stock>=$inputToCart['quantity']){
                 $inputToCart['user_email']='rodrigo_vilanova@hotmail.com';
                 $session_id=Session::get('session_id');
                 if(empty($session_id)){
@@ -39,7 +38,7 @@ class CartController extends Controller
                 $inputToCart['session_id']=$session_id;
                 $sizeAtrr=explode("-",$inputToCart['size']);
                 $inputToCart['size']=$sizeAtrr[1];
-                $inputToCart['product_code']=$stockAvailable->sku;
+
                 $count_duplicateItems=Cart_model::where(['products_id'=>$inputToCart['products_id'],
                     'product_color'=>$inputToCart['product_color'],
                     'size'=>$inputToCart['size']])->count();
@@ -50,9 +49,7 @@ class CartController extends Controller
                     Cart_model::create($inputToCart);
                     return back()->with('message','Agregado al carrito');
                 }
-            }else{
-                return back()->with('message','No hay suficiente en almacen!');
-            }
+
         }
     }
     public function deleteItem($id=null){
