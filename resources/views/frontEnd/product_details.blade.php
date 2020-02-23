@@ -63,9 +63,11 @@
                         </select>
                         </span><br>
                         <span>
-
-
-                            <span id="">MX ${{$detail_product->price}}</span>
+                            @if(Auth::check())
+                                <span id="">MX ${{$detail_product->price_u}}</span>
+                            @else
+                                <span id="">MX ${{$detail_product->price}}</span>
+                            @endif
 
                             <label>Cantidad:</label>
                             <input type="text" name="quantity" value="{{$totalStock}}" id="inputStock"/>
@@ -78,11 +80,14 @@
                         </span>
                         <p><b>Disponibles:</b>
                             @if($totalStock>0)
+
                                 <span id="availableStock">Disponible</span>
                             @else
                                 <span id="availableStock">Agotado</span>
                             @endif
                         </p>
+                        <p><strong>Color:</strong> {{$detail_product->p_color}}</p>
+
                         <p><b>Condicion:</b> Nuevo</p>
 
                     </div><!--/product-information-->
@@ -101,10 +106,6 @@
                 <div class="tab-pane fade active in" id="details" >
                     {{$detail_product->description}}
                 </div>
-
-
-
-
             </div>
         </div><!--/category-tab-->
 

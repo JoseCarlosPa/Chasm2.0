@@ -22,7 +22,7 @@
         </li>
         <li class="submenu {{$menu_active==5? ' active':''}}"> <a href="#"><i class="icon icon-user"></i> <span>Usuarios</span></a>
             <ul>
-                <li><a href="{{url('/login_page')}}">Agregar nuevo usuario</a></li>
+                <li><a href="{{url('/register')}}">Agregar nuevo usuario</a></li>
                 <li><a href="{{route('users_admin.index')}}">Lista de usuarios</a></li>
             </ul>
         </li>

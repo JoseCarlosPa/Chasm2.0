@@ -15,6 +15,10 @@ class UsersController extends Controller
     public function index(){
         return view('users.login_register');
     }
+    public function index2(){
+        return view('users.register');
+    }
+
     public function register(Request $request){
         $this->validate($request,[
            'name'=>'required|string|max:255',

@@ -96,7 +96,7 @@
                     <a href="{{'/tienda'}}" class="links_cards">
                         <div class="card card_shadow" style="width: 18rem; height: 25rem;">
                             <div class="trapezoid3 "><p style="margin-top: 10%">Comprar</p></div>
-                            <img class="card-img-top" src="{{asset('frontEnd/imgs/miniaturas/1.JPG')}}"
+                            <img class="card-img-top" src="{{asset('frontEnd/imgs/miniaturas/1.JPG')}} " height="230vw"
                                  alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Mochila A1</h5>
@@ -111,7 +111,7 @@
                     <a href="" class="links_cards">
                         <div class="card card_shadow" style="width: 18rem;height: 25rem;">
                             <div class="trapezoid3 "><p style="margin-top: 10%">Comprar</p></div>
-                            <img class="card-img-top" src="{{asset('frontEnd/imgs/miniaturas/2.png')}}"
+                            <img class="card-img-top" src="{{asset('frontEnd/imgs/miniaturas/2.jpg')}}"height="200vw
                                  alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">	Aristeia! Dice Pack</h5>
@@ -125,7 +125,7 @@
                     <a href="{{'/tienda'}}" class="links_cards">
                         <div class="card card_shadow" style="width: 18rem;height: 25rem;">
                             <div class="trapezoid3 "><p style="margin-top: 10%">Comprar</p></div>
-                            <img class="card-img-top" src="{{asset('frontEnd/imgs/miniaturas/3.png')}}"
+                            <img class="card-img-top" src="{{asset('frontEnd/imgs/miniaturas/3.jpg')}}"height="200vw
                                  alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Wildfire (de Infinity)</h5>
@@ -145,7 +145,7 @@
                     <a href="{{'/tienda'}}" class="links_cards">
                         <div class="card card_shadow" style="width: 18rem;height: 25rem;">
                             <div class="trapezoid3 "><p style="margin-top: 10%">Comprar</p></div>
-                            <img class="card-img-top" src="{{asset('frontEnd/imgs/miniaturas/4.png')}}"
+                            <img class="card-img-top" src="{{asset('frontEnd/imgs/miniaturas/4.png')}}" height="230vw"
                                  alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Bolsa de dados</h5>
@@ -159,7 +159,7 @@
                     <a href="" class="links_cards">
                         <div class="card card_shadow" style="width: 18rem;height: 25rem;">
                             <div class="trapezoid3 "><p style="margin-top: 10%">Comprar</p></div>
-                            <img class="card-img-top" src="{{asset('frontEnd/imgs/miniaturas/5.png')}}"
+                            <img class="card-img-top" src="{{asset('frontEnd/imgs/miniaturas/5.png')}}"height="230vw
                                  alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">T2</h5>
@@ -173,7 +173,7 @@
                     <a href="{{'/tienda'}}" class="links_cards">
                         <div class="card card_shadow" style="width: 18rem;height: 25rem;">
                             <div class="trapezoid3 "><p style="margin-top: 10%">Comprar</p></div>
-                            <img class="card-img-top" src="{{asset('frontEnd/imgs/miniaturas/6.png')}}"
+                            <img class="card-img-top" src="{{asset('frontEnd/imgs/miniaturas/6.png')}}"height="230vw
                                  alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">1 Bolsa de Dados</h5>
@@ -424,21 +424,21 @@
             </div>
             <div class="row">
                 <div class="col-sm-1"></div>
-                <div class="col-sm-2">
-                    <a href="http://www.infinitythegame.com" target="_blank"><img
-                            src="{{asset('frontEnd/images/home/corvus.svg')}}" width="50%" height="50%"></a>
+                <div class="col-sm-2 text-center">
+                    <p><a href="http://www.infinitythegame.com" target="_blank"><img
+                            src="{{asset('frontEnd/images/home/corvus.svg')}}" width="150vw" height="150vw"></a>
                     <a href="http://www.aristeiathegame.com" target="_blank"><img
-                            src="{{asset('frontEnd/images/home/aristei.png')}}" width="40%" height="60%"></a>
+                            src="{{asset('frontEnd/images/home/aristei.png')}}" width="150vw" height="150vw"></a></p>
                 </div>
                 <div class="col-sm-2 text-center">
                     <p><a href="http://www.modiphius.com" target="_blank"><img
-                                src="{{asset('frontEnd/images/home/modifus.png')}}" width="50%" height="50%"></a></p>
+                                src="{{asset('frontEnd/images/home/modifus.png')}}" width="150vw" height="150vw"></a></p>
                 </div>
                 <div class="col-sm-2 text-center">
                     <a href="http://www.nosolorol.com" target="_blank"><img
-                            src="{{asset('frontEnd/images/home/nosolor.png')}}" width="40%" height="70%"></a>
+                            src="{{asset('frontEnd/images/home/nosolor.png')}}" width="150vw" height="150vw"></a>
                     <a href="http://www.siriusdice.com" target="_blank"><img
-                            src="{{asset('frontEnd/images/home/sirius.png')}}" width="40%" height="70%"></a>
+                            src="{{asset('frontEnd/images/home/sirius.png')}}" width="150vw" height="150vw"></a>
                 </div>
                 <div class="col-sm-1"></div>
             </div>

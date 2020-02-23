@@ -17,7 +17,7 @@
     <link href="{{asset('frontEnd/css/responsive.css')}}" rel="stylesheet">
     <link href="{{asset('frontEnd/css/chasm.css')}}" rel="stylesheet">
 
-    <link rel="icon" type="image/png" href="{{asset('frontEnd')}}/images/home/Logo.png">
+    <link rel="icon" type="image/png" href="{{asset('frontEnd')}}/images/home/dungeon.png">
 
     <!--[if lt IE 9]>
     <script src="{{asset('frontEnd/js/html5shiv.js')}}"></script>

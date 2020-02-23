@@ -65,7 +65,7 @@
                     </div>
                     <section id="cart_items">
                         <div class="review-payment">
-                            <h2>Review & Payment</h2>
+                            <h2>Resumen & confirmación</h2>
                         </div>
                         <div class="table-responsive cart_info">
                             <table class="table table-condensed">
@@ -134,9 +134,9 @@
                             </table>
                         </div>
                         <div class="payment-options">
-                            <span>Selecccionar metodo de pago : </span>
-                            <span>
-                            <label><input type="radio" name="payment_method" value="Paypal" checked > Paypal</label>
+                            <span style ="visibility: hidden">Selecccionar metodo de pago : </span>
+                            <span style ="visibility: hidden">
+                            <label><input type="radio" name="payment_method" value="Paypal" checked  > Paypal</label>
                         </span>
                             <button type="submit" class="btn btn-primary" style="float: right;">Ordenar ahora</button>
                         </div>

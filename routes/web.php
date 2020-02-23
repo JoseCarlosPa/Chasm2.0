@@ -30,6 +30,7 @@ Route::get('/cart/update-quantity/{id}/{quantity}','CartController@updateQuantit
 Route::post('/apply-coupon','CouponController@applycoupon');
 /// Simple User Login /////
 Route::get('/login_page','UsersController@index');
+Route::get('/register','UsersController@index2');
 Route::post('/register_user','UsersController@register');
 Route::post('/user_login','UsersController@login');
 Route::get('/logout','UsersController@logout');
@@ -44,7 +45,7 @@ Route::group(['middleware'=>'FrontLogin_middleware'],function (){
     Route::get('/order-review','OrdersController@index');
     Route::post('/submit-order','OrdersController@order');
     Route::get('/cod','OrdersController@cod');
-    Route::get('/paypal','OrdersController@paypal');
+    Route::get('/end','OrdersController@paypal');
 });
 ///
 

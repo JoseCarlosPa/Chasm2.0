@@ -28,7 +28,7 @@ class OrdersController extends Controller
         if($payment_method=="COD"){
             return redirect('/cod');
         }else{
-            return redirect('/paypal');
+            return redirect('/end');
         }
     }
     public function cod(){
