@@ -111,7 +111,7 @@
                     <a href="" class="links_cards">
                         <div class="card card_shadow" style="width: 18rem;height: 25rem;">
                             <div class="trapezoid3 "><p style="margin-top: 10%">Comprar</p></div>
-                            <img class="card-img-top" src="{{asset('frontEnd/imgs/miniaturas/2.jpg')}}"height="200vw
+                            <img class="card-img-top" src="{{asset('frontEnd/imgs/miniaturas/2.jpg')}}"height="200vw"
                                  alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">	Aristeia! Dice Pack</h5>
@@ -125,7 +125,7 @@
                     <a href="{{'/tienda'}}" class="links_cards">
                         <div class="card card_shadow" style="width: 18rem;height: 25rem;">
                             <div class="trapezoid3 "><p style="margin-top: 10%">Comprar</p></div>
-                            <img class="card-img-top" src="{{asset('frontEnd/imgs/miniaturas/3.jpg')}}"height="200vw
+                            <img class="card-img-top" src="{{asset('frontEnd/imgs/miniaturas/3.jpg')}}"height="200vw"
                                  alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">Wildfire (de Infinity)</h5>
@@ -156,10 +156,10 @@
                     </a>
                 </div>
                 <div class="col-sm-4">
-                    <a href="" class="links_cards">
+                    <a href="{{'/tienda"'}}" class="links_cards">
                         <div class="card card_shadow" style="width: 18rem;height: 25rem;">
                             <div class="trapezoid3 "><p style="margin-top: 10%">Comprar</p></div>
-                            <img class="card-img-top" src="{{asset('frontEnd/imgs/miniaturas/5.png')}}"height="230vw
+                            <img class="card-img-top" src="{{asset('frontEnd/imgs/miniaturas/5.png')}}"height="230vw"
                                  alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">T2</h5>
@@ -173,7 +173,7 @@
                     <a href="{{'/tienda'}}" class="links_cards">
                         <div class="card card_shadow" style="width: 18rem;height: 25rem;">
                             <div class="trapezoid3 "><p style="margin-top: 10%">Comprar</p></div>
-                            <img class="card-img-top" src="{{asset('frontEnd/imgs/miniaturas/6.png')}}"height="230vw
+                            <img class="card-img-top" src="{{asset('frontEnd/imgs/miniaturas/6.png')}}"height="230vw"
                                  alt="Card image cap">
                             <div class="card-body">
                                 <h5 class="card-title">1 Bolsa de Dados</h5>
@@ -378,23 +378,67 @@
             </div>
 
             <!--Inicio de Tienda-->
-            <div class="row margin_tienda2_mobil">
-                <div class="col-sm-12">
-                    <a href="{{'/tienda'}}" class="links_cards">
-                        <div class="card card_shadow" style="width: 18rem; height: 25rem;">
-                            <div class="trapezoid3 "><p style="margin-top: 10%">Comprar</p></div>
-                            <img class="card-img-top" src="{{asset('frontEnd/imgs/miniaturas/1.JPG')}}"
-                                 alt="Card image cap">
-                            <div class="card-body">
-                                <h5 class="card-title">Mochila A1</h5>
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row margin_tienda2_mobil">
+                            <div class="col-sm-12">
+                                <a href="{{'/tienda'}}" class="links_cards">
+                                    <div class="card " style="width: 18rem; height: 25rem;">
+                                        <div class="trapezoid3 "><p style="margin-top: 10%">Comprar</p></div>
+                                        <img class="card-img-top" src="{{asset('frontEnd/imgs/miniaturas/1.JPG')}}"
+                                             alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Mochila A1</h5>
 
-                                <img src="{{asset('frontEnd/imgs/miniaturas/carrito.svg')}}" width="20%" height="20%">
-                                $1850.00
+                                            <img src="{{asset('frontEnd/imgs/miniaturas/carrito.svg')}}" width="20%" height="20%">
+                                            $1850.00
+                                        </div>
+                                    </div>
+                                </a>
                             </div>
                         </div>
-                    </a>
+                    </div>
+                    <div class="carousel-item">
+
+                        <div class="row margin_tienda2_mobil">
+                            <div class="col-sm-12">
+                                <a href="/tienda" class="links_cards">
+                                    <div class="card " style="width: 18rem;height: 25rem;">
+                                        <div class="trapezoid3 "><p style="margin-top: 10%">Comprar</p></div>
+                                        <img class="card-img-top" src="{{asset('frontEnd/imgs/miniaturas/2.jpg')}}"height="200vw"
+                                 alt="Card image cap">
+                                        <div class="card-body">
+                                            <h5 class="card-title">	Aristeia! Dice Pack</h5>
+                                            <img src="{{asset('frontEnd/imgs/miniaturas/carrito.svg')}}" width="20%" height="20%">
+                                            $250.00
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <a href="{{'/tienda'}}" class="links_cards">
+                            <div class="card " style="width: 18rem;height: 25rem;">
+                                <div class="trapezoid3 "><p style="margin-top: 10%">Comprar</p></div>
+                                <img class="card-img-top" src="{{asset('frontEnd/imgs/miniaturas/3.jpg')}}"height="200vw"
+                                     alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">Wildfire (de Infinity)</h5>
+
+                                    <img src="{{asset('frontEnd/imgs/miniaturas/carrito.svg')}}" width="20%" height="20%">
+                                    $960.00
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
+
+
+
+
             <!--Fin de muestra de tienda-->
             <br><br><br>
 

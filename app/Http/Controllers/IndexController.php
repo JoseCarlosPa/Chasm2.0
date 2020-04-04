@@ -29,6 +29,7 @@ class IndexController extends Controller
 
     public function shop(){
         $products=Products_model::paginate(6);
+
         $byCate="";
         return view('frontEnd.products',compact('products','byCate'));
     }
